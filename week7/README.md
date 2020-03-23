@@ -36,3 +36,9 @@ cat example.txt | wc -w
 cat example.txt | wc > example_wc.txt
 cat example2.txt | wc >> example_wc.txt
 ```
+
+```bash
+arr=$(grep chromosome fruitfly.fna|grep -Ev "X|Y|CEN" |cut -d' '  -f5)
+for a in $arr;do echo $a;done;
+```
+ 

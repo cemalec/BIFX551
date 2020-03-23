@@ -25,4 +25,5 @@
 - **uniq:** Finds unique elements in file, but only if they are next to each other
 
 The pipe | combines two commands, placing the output of the left command to the input of the right command. For example the following will count the words in the file example.txt
-```{sh}cat example.txt | wc -w```
+
+```{bash} cat example.txt | wc -w```

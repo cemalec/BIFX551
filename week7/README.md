@@ -26,9 +26,9 @@
 
 The pipe | combines two commands, placing the output of the left command to the input of the right command. For example the following will count the words in the file example.txt
 
-``` cat example.txt | wc -w```
+```cat example.txt | wc -w```
 
-> sends output to a file, and >> sends output to append to an existing file
+'>' sends output to a file, and '>>' sends output to append to an existing file
 
-``` cat example.txt | wc > example_wc.txt
-    cat example2.txt | wc >> example_wc.txt```
+```cat example.txt | wc > example_wc.txt
+   cat example2.txt | wc >> example_wc.txt```

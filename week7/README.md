@@ -43,6 +43,6 @@ arr=$(grep chromosome fruitfly.fna|grep -Ev "X|Y|CEN" |cut -d' '  -f5)
 for a in $arr;do sed -n "/chromosome $a/,/>/p" < fruitfly.fna | sed '1d;$d' > $a.txt;done;
 mkdir FruitFlySeq
 for a in $arr;do mv $a.txt FruitFlySeq/$a.txt;done;
-zip -r FruitFlySeq FruitFlySeq
+gzip -r FruitFlySeq
 ```
  

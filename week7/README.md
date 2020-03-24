@@ -36,9 +36,13 @@ cat example.txt | wc -w
 cat example.txt | wc > example_wc.txt
 cat example2.txt | wc >> example_wc.txt
 ```
-
+# Assignment
+For your assignment this week, you will download the **FruitFlySeq** folder and unzip it. Use terminal commands to view the contents of the folder, and use grep to find the number of sequences GATTACA in each file. Store the results in a text file. Below is the bash script used to create the sample of [fruit fly chromosome sequences](https://www.ncbi.nlm.nih.gov/genome?term=vih&cmd=DetailsSearch)
 ```bash
 arr=$(grep chromosome fruitfly.fna|grep -Ev "X|Y|CEN" |cut -d' '  -f5)
-for a in $arr;do echo $a;done;
+for a in $arr;do sed -n "/chromosome $a/,/>/p" < fruitfly.fna | sed '1d;$d' > $a.txt;done;
+mkdir FruitFlySeq
+for a in $arr;do mv $a.txt FruitFlySeq/$a.txt;done;
+zip -r FruitFlySeq FruitFlySeq
 ```
  

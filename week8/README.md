@@ -10,4 +10,4 @@ R has a lot of packages, and odds are, if you stick around in bioinformatics lon
 3) Hand in you package as a repo on the **homework** branch of week8. It should have a .R and a man folder. Include a .md file with your repsonse to question 2.
 
 # Your next project
-Create another reproducible report. This time the audience will be for a 'business user' who may not be as concerned about the details of your analysis and every piece of supporting information. This should be 1-2 pages without code, 2-3 figures, and a statistical test. Due **April 17th**
+Create another reproducible report. This time the audience will be for a 'business user' who may not be as concerned about the details of your analysis and every piece of supporting information. This should be 1-2 pages without code, 2-3 figures, and a statistical test. I've attached an example. Due **April 17th**.

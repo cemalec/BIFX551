@@ -1,0 +1,89 @@
+---
+title: "A comparison of Influenza, 2019-2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+library(readr)
+library(dplyr)
+library(tidyverse)
+library(ggplot2)
+```
+
+## Overall Trends
+
+```{r, echo = FALSE, message = FALSE}
+# Download and save the data.
+url3 <- "https://raw.githubusercontent.com/lglang/Datasets/master/Flu2019-2020.csv"
+download.file(url3, "Flu2019")
+flu_df <- read_csv("Flu2019")
+# Seperate cases of flu by year
+flu19 <- flu_df %>% filter(Year == 2019)
+flu20 <- flu_df %>% filter(Year == 2020)
+# Plot cases of flu by year
+ggplot(data = flu19)+ 
+  geom_line(mapping = aes(Week, ALL_INF, color = "Flu 2019"))+
+  labs(x = "Week in the year",
+       y = "Positive cases of Influenza", title = "Total cases of Influenza A and B by week")+
+  geom_line(data = flu20, mapping = aes(Week, ALL_INF, color = "Flu 2020"))
+```
+
+## Statistical Means
+```{r,echo=FALSE, message = FALSE}
+# Filter to the first six weeks of both years.
+flu_wk1 <-flu_df %>% filter(Week < 7)
+# Plot mean of case numbers during the first six weeks of flu by year.
+ggplot(data = flu_wk1)+
+  geom_boxplot(mapping = aes(Year, ALL_INF, group = Year))+
+  labs(x = "Year",
+       y = "Positive cases of Influenza",
+       title = "Mean number of influenza cases in the first six weeks of 2019 and 2020")
+```
+
+## A Closer Look
+```{r, echo = FALSE, message=FALSE}
+# Extract subtype data
+flu_subtype <- flu_df %>% pivot_longer(cols = AH1:INF_B,
+                        names_to = "Subtype")
+# Filter to the first week of 2019 and 2020.
+subtype_wk1 <- flu_subtype %>% drop_na() %>% filter(Week == 1) %>% 
+  arrange(Subtype)
+# Plot the comparison of subtypes in 2019 and 2020.
+ggplot(data = subtype_wk1)+
+  geom_col(mapping = aes(Subtype, value, fill = Subtype))+
+  labs(x = "Subtype", y = "Number of cases", title = "Total weekly cases of Influenza by Subtype")+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))+
+  facet_wrap(~Year)
+```
+
+## Tasty pies
+```{r, echo=FALSE, message = FALSE}
+# Filter to first week of 2019, and create percent catagory of subtype/total cases
+subtype_wk1_19 <- flu_subtype %>% drop_na() %>% filter(Week == 1, Year == 2019) %>% 
+  arrange(Subtype) %>% mutate(Percent = value/ALL_INF) %>% select(Subtype:Percent) %>%
+  slice(1:7)
+# Plot the percent cases of each subtype in a pie chart  
+ggplot(data = subtype_wk1_19)+
+  geom_col(mapping = aes(x = "", y = Percent, fill = Subtype))+
+  labs(x = "Subtype", y = "Number of cases", 
+       title = "Percentage of Influenza cases by Subtype, Week 1, 2019")+ coord_polar("y")
+```
+
+## Tasty Pies, cont
+```{r, echo = FALSE, message = FALSE}
+# Same as above, but with 2020.
+subtype_wk1_20 <- flu_subtype %>% drop_na() %>% filter(Week == 1, Year == 2020) %>% 
+  arrange(Subtype) %>% mutate(Percent = value/ALL_INF) %>% select(Subtype:Percent) %>%
+  slice(1:6)
+
+ggplot(data = subtype_wk1_20)+
+  geom_col(mapping = aes(x = "", y = Percent, fill = Subtype))+
+  labs(x = "Subtype", y = "Number of cases", 
+       title = "Percentage of Influenza cases by Subtype, Week 1, 2020")+ coord_polar("y")
+```
+
+## Final Words
+- Wash your hands
+- Get your flu shot 
+- Good news: the current season vaccine is effective!
+- *All data is taken from the [WHO FluMart database](http://apps.who.int/flumart/Default?ReportNo=12). Data used here represents data from December 31, 2018 through February 9, 2020. Data is stored on a personal github to prevent changes.*

@@ -1,0 +1,68 @@
+Destinee Morrow
+Week 7 Homework - BASH 
+
+destinee@Destinees-MacBook-Pro ~ % pwd
+/Users/destinee
+destinee@Destinees-MacBook-Pro ~ % cd Documents/Programming
+destinee@Destinees-MacBook-Pro Programming % ls
+2L.txt				DMorrowWk4.Rmd
+2R.txt				DMorrowWk4.html
+3L.txt				Dmwk6class.pages
+3R.txt				HorseColicPres.Rmd
+4.txt				HorseColicPres.html
+551DMorrowwk4.pages		MineralsData.csv
+551wk3inclass.pages		MineralsData.numbers
+BIFX5512020			bifx551week2inclass.pages
+DMWeek5HW.Rmd			forestfires.csv
+DMWeek5HW.html			functionex.r
+DMWk4.Rmd			horse.csv
+DMorrowCapstoneProposal.pdf	horsecolic.csv
+DMorrowWk2HW.R			horsecolicproject.Rmd
+DMorrowWk3HW.R			horsecolicproject.html
+destinee@Destinees-MacBook-Pro Programming % less 2L.txt
+#using grep to find sequences in txt file
+destinee@Destinees-MacBook-Pro Programming % cat 2L.txt | wc | grep -o "GATTACA" > week7hw.txt
+#realized that I accidentally put word count before prep and the output txt file had nothing in it
+destinee@Destinees-MacBook-Pro Programming % cat week7hw.txt
+#checking to make sure that grep is properly finding all the sequences
+destinee@Destinees-MacBook-Pro Programming % cat 2L.txt | grep -o "GATTACA" > week7hw.txt  
+destinee@Destinees-MacBook-Pro Programming % cat week7hw.txt
+GATTACA
+GATTACA
+GATTACA
+GATTACA
+GATTACA
+GATTACA
+GATTACA
+GATTACA
+GATTACA
+GATTACA
+GATTACA
+GATTACA
+GATTACA
+GATTACA
+#using word count to see how many times grep find the sequence
+destinee@Destinees-MacBook-Pro Programming % cat 2L.txt | grep -o "GATTACA" | wc  > week7hw.txt
+#output directed to txt file
+#new lines, words and then bytes respectively 
+destinee@Destinees-MacBook-Pro Programming % cat week7hw.txt
+    1047    1047    8376
+destinee@Destinees-MacBook-Pro Programming % less 2R.txt
+#I noticed in this file that lower and uppercase were being used, -i flag ignores case sensitivity 
+# >> appends to end of file
+destinee@Destinees-MacBook-Pro Programming % cat 2R.txt | grep -oi "GATTACA" | wc >> week7hw.txt 
+destinee@Destinees-MacBook-Pro Programming % cat week7hw.txt 
+    1047    1047    8376
+    1354    1354   10832
+destinee@Destinees-MacBook-Pro Programming % less 3L.txt 
+#using same pipes and function to search and store word count on sequence for remaining files
+destinee@Destinees-MacBook-Pro Programming % cat 3L.txt | grep -oi "GATTACA" | wc >> week7hw.txt
+destinee@Destinees-MacBook-Pro Programming % cat 3R.txt | grep -oi "GATTACA" | wc >> week7hw.txt
+destinee@Destinees-MacBook-Pro Programming % cat 4.txt | grep -oi "GATTACA" | wc >> week7hw.txt
+#file text file with word counts from all txt files
+destinee@Destinees-MacBook-Pro Programming % cat week7hw.txt 
+    1047    1047    8376
+    1354    1354   10832
+    1442    1442   11536
+    1573    1573   12584
+      87      87     696

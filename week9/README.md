@@ -4,7 +4,7 @@ You will take other courses in this sequence that will better address modeling i
 ## T-test
 We already cover t-tests, this is for comparing two continuous variables in that differ by some condition. A large t-statistic means that it is likely that the means of the two measurements are different.
 
-## Chi-squared test
+## $\chi^2$ Chi-squared test
 The chi-squared test is typically used for factor variables. A large chi-squared statistic indicates that the counts of different factor variables are most likely not an accident. Put another way, a chi-squared statistic of zero would mean that the null hypothesis is correct and the number of factor variables appearing in a data set is due to chance.
 
 The chisq.test in R requires that you format your input as a *contingency table*. This means that the rows are one factor variable and the columns are another, and the matrix elements are counts for each combination of factors. Here is an example of how to format such a table:

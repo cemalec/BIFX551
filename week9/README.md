@@ -38,5 +38,25 @@ linear_model <- lm(formula = price ~ carat, data = diamonds)
 linear_model_twovars <- lm(formula = price ~ depth + carat, data= diamonds)
 linear_model_all <- lm(formula = price ~ ., data = diamonds)
 linear_model_allbut <- lm(formula = price ~ . - color, data = diamonds)
+
+#Predict new data
+predict.lm(linear_model, data.frame(carat = c(0.4,0.5,0.6,0.8))
 ```
+The coefficients for a linear model can be displayed by linear_model$coefficients. A vector of residuals can be generated from linear_model$residuals.
+
 ## Logistic Model
+Logistic models are similar to a linear model, except the data is fit to a 'logit' function instead of a linear one. Logistic models are effective for modeling a binary probability vs either a continuous or a discrete variable. The function for implementing logistic models in R is glm (generalized linear model). glm can fit several different models, including gaussian, so you must specify a family of functions as shown below.
+
+```{r}
+data(rats)
+
+logit_model_cont <- glm(formula = status~time, data = rats, family = binomial(link = "logit"))
+logit_model_disc <- glm(formula = status~sex, data = rats, family = binomial(link = "logit"))
+
+#Predict new data, 'response' indicates to output probabilities
+predict.glm(logit_model_cont, newdata= data.frame(time=c(0,10,20,30,40)),type = "response")
+```
+
+The coefficients of the continuous model represent a fit to the logistic function, a large value means a large uncertainty in the demarcation between the two categories. A negative sign indicates that the '1' category is more likely for a smaller value of the continuous variable.
+
+The coefficients of the dicrete model represent a relative probability compared to an 'anchor' level of the factor variable. In this example, my model output 'sexm' meaning that the coefficient -3.29 is with reference to the 'm' level of the 'sex' factor variable. In this case, female rats were much more likely than male rats to be in the '0' category, or censored out of the study.

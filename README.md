@@ -77,7 +77,7 @@ Mar 10 | Spring Recess | |
 Mar 17 | Spring Recess | |
 Mar 24 | Unix environments and shell scripts | |grep assignment
 Mar 31 | Parts of an R package |Chapter 11: HOPR](https://rstudio-education.github.io/hopr/loops.html) | Github report and minimal R package
-Apr 7 | Regression analysis with R: linear and logistic|[Linear Regression](http://r-statistics.co/Linear-Regression.html), [Logistic Regression](http://r-statistics.co/Logistic-Regression-With-R.html) |Project 2: Reproducible Report 2 Due Friday April 10th
+Apr 7 | Regression analysis with R: linear and logistic|[Linear Regression](http://r-statistics.co/Linear-Regression.html), [Logistic Regression](http://r-statistics.co/Logistic-Regression-With-R.html) |Project 2: Reproducible Report 2 Due Friday April 17th
 Apr 14 | The frontend: R shiny|[RStudio](https://shiny.rstudio.com/) |Minimal R-shiny app
 Apr 21 | The frontend: R shiny | |Call a function
 Apr 28 | The frontend: R  shiny | |Project Progress check

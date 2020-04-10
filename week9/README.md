@@ -31,6 +31,45 @@ Xsq2 <- chisq.test(diamonds$cut,diamonds$color) #Equivalent, and frankly easier,
 
 chisq.test returns a list just like t.test. Type help(chisq.test) for a listing of all 9 attributes of chisq.test's output as well as additional options for chisq.test.
 
+### Another example: Titanic data
+A lower dimensional example may illustrate what is going on here. We use a classic dataset of survival from the Titanic. There are survival rates among cabin class, sex, and age. We'll choose age to keep this as a 2x2 contingency table.
+
+```{r}
+data(Titanic) #Load titanic data, includes survival statistics of 109 children and 2092 adults
+Survival_age <- as.data.frame(Titanic) #Convert to dataframe from table
+                  %>% select(c('Age','Survived','Freq')) 
+                  %>% group_by(Age,Survived) %>% summarize(Total = sum(Freq)) 
+                  %>% pivot_wider(names_from=Survived,values_from = Total) 
+                  %>% column_to_rownames('Age')
+
+#Create synthetic data based on 109 children and 2092 adults, randomly assign whether each passenger survived.
+Titanic_synth <- data.frame('Survived'=c(sample(c('No','Yes'),109,replace=TRUE), 
+                                         sample(c('No','Yes'),2092,replace=TRUE)),
+                            'Age'=c(rep('Child',109),rep('Adult',2092)))
+
+#Create contingency table for synthetic data
+Survival_age_synth <- Titanic_synth %>% group_by(Age,Survived) %>% summarize(Total = n()) 
+                                    %>% pivot_wider(names_from=Survived,values_from = Total) 
+                                    %>% column_to_rownames('Age')
+
+```
+
+The real data looks like this:
+
+_   |Survived|Died|
+---|---|---
+Child | 57 | 52
+Adult | 654 | 1458
+
+The synthetic data looks like this:
+
+_   |Survived|Died|
+---|---|---
+Child | 59 | 50
+Adult | 1044 | 1048
+
+We can see that the real data indicates a strong trend for Adults, and therefore we suspect that this contingency table is unlikely due to chance. The Chi-squared test results in a statistic of 20.005 and a p-value of 7.7e-6, and we therefore reject the null hypothesis. The Chi-squared test for the synthetic data results in a statistic of 0.52234 and a p-value of 0.47, and we therefore fail to reject the null hypothesis. This is good news, because the synthetic data is explicitly due to chance!
+
 ## Linear Model
 Linear models are simply a regression model, in r, it is called by the lm function in the stats package.
 ```{r}

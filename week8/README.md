@@ -15,3 +15,4 @@ Create another reproducible report. This time the audience will be for a 'busine
 Hand in to blackboard:
 - .rmd file
 - .html or .pdf file that was knit
+- any data files necessary to knit your file

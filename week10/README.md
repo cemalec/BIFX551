@@ -25,5 +25,10 @@ You can create your own Shiny app easily from within RStudio by selecting "Shiny
 ## Publishing your App
 When you launch your shiny app within RStudio there is a "publish" button that will allow you to publish to https://www.shinyapps.io/ . In order to do this, you need to create an account, which is free. It is also possible to publish to your own site, but takes a bit more doing and is beyond the scope of this course (and me).
 
+## Resources
+- [Shiny Tutorial](https://shiny.rstudio.com/tutorial/)
+- [The function reference](https://shiny.rstudio.com/reference/shiny/1.0.5/)
+- [Cheatsheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf)
+
 # Assignment
 Make literally any graph interactive. Feel free to adjust one of the built-in examples (in fact, that is probably preferable) and a data-set loaded from base R such as "iris" or "mtcars". Submit a .R file that I can open in R studio, or publish to shinyapps.io and send me the link.

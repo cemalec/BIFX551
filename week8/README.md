@@ -11,3 +11,7 @@ R has a lot of packages, and odds are, if you stick around in bioinformatics lon
 
 # Your next project
 Create another reproducible report. This time the audience will be for a 'business user' who may not be as concerned about the details of your analysis and every piece of supporting information. This should be 1-2 pages without code, 2-3 figures, and a statistical test. I've attached an example. Due **April 17th**.
+
+Hand in to blackboard:
+- .rmd file
+- .html or .pdf file that was knit

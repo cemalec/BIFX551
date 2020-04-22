@@ -2,7 +2,7 @@
 
 Your final project will be an R Shiny application, you will hand in
 - An .r file of your code
-- A link to the actual application (likely hosted on [shinyapps.io](shinyapps.io)
+- A link to the actual application (likely hosted on [shinyapps.io](shinyapps.io))
 
 ## Requirements
 Your shiny app should allow a user to interact with data in some way, the type of data is up to you. Keep in mind that you can simplify the data set in some way if you do not want to create 12 input sliders to control every aspect of the data. I want to give you enough flexibility to allow for creativity, but I also want you to demonstrate that you can design a variety of apps. Almost every app will require at least one or two of four things, so for a complete project, your app should allow the user to:

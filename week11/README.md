@@ -29,6 +29,10 @@ Your shiny app should allow a user to interact with data in some way, the type o
   - Download a .pdf or other file of the graph
   - Download a .csv of the transformed data
   - Some other useful output that can be downloaded.
+- Coding practices
+  - Comment your code, this means a comment for each function you write, and a short description of variables.
+  - Make your code modular, use variables that you can change once and write functions for actions you do over and over again.
+  - Use require(package) to make sure all packages are loaded when someone tries to run your app
   
 ## Due Date
 - 4/28, 5/5 Each Tuesday, please provide a link to demonstrate your progress.

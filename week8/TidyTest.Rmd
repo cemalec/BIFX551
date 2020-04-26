@@ -1,0 +1,42 @@
+---
+title: "Tidyverse and Vignettes"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Tidy Verse Tests Explanations
+
+I decided to look at the tidyverse test for "drop_na".
+The first test on this github .R file is below:
+
+test_that("empty call drops every row", {
+  df <- tibble(x = c(1, 2, NA), y = c("a", NA, "b"))
+  exp <- tibble(x = c(1), y = c("a"))
+  res <- tidyr::drop_na(df)
+  expect_equal(res, exp)
+})
+  
+  - This testing seems fairly explanatory to me. The first variable is setting a table that contains an NA value.The second variable is set to a table that doesnt contain any NA values. After using the "drop_na" test on the first table, both variables should then be equal, meaning neither contain NA values now because rows were dropped.
+
+The second test is a little more complicated and harder to understand:
+
+test_that("groups are preserved", {
+  df <- tibble(g = c("A", "A", "B"), x = c(1, 2, NA), y = c("a", NA, "b"))
+  exp <- tibble(g = c("A", "B"), x = c(1, NA), y = c("a", "b"))
+
+  gdf <- dplyr::group_by(df, "g")
+  gexp <- dplyr::group_by(exp, "g")
+
+  res <- tidyr::drop_na(gdf, y)
+  expect_equal(res, gexp)
+  expect_equal(dplyr::group_vars(res), dplyr::group_vars(gexp))
+})
+  
+  - What i am not understanding here is that the second variable "Exp" also has an NA value, yet I am not seeing a drop_na function being called. So to my understanding, yes the two variables are the same, but they still contain NA values.
+
+## Vignettes
+Vignettes are very similar to the Rmd files that we have been creating. In that, they are Rmd files, but they explain how to use the package. The vignette is kind of like an abstract for a paper, that gives examples of functions etc.
+The data used in the Vignette is in a different folder, a folder for the vignette is created separately. However, it uses the other folders like R to call the functions and use data.

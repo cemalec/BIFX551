@@ -1,0 +1,77 @@
+---
+title: "COVID-19 Analysis and Predictions"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+## Destinee Morrow BIFX 551 Spring 2020
+## Background
+
+COVID-19 or Coronavirus disease originated in 2019 from Wuhan, China in late November or early December. The virus name for this disease is SARS-CoV-2 or severe acute respiratory syndrome coronavirus 2. Looking at the viral DNA, it has been 96% matched to bats or pangolians as the originating host. However, humans are also a 96% DNA match to chimpanzees, so this analysis doesnt tell us much. What might give us some concrete analysis is looking at the number of deaths world wide. 
+
+```{r data load, echo=FALSE}
+download.file('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv', 'covid_cases.csv')
+cases <- read.csv('covid_cases.csv')
+```
+
+```{r data load 2, echo=FALSE}
+download.file('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv', 'covid_deaths.csv')
+deaths <- read.csv('covid_deaths.csv')
+```
+
+
+```{r chi pre, echo=FALSE, message=FALSE}
+library(tidyr)
+library(tidyverse)
+library(dplyr)
+library(tibble)
+
+deaths[deaths==0] <- NA
+ 
+covid_matrix <- deaths %>% select(c(Country.Region,X4.1.20,X4.12.20)) %>% group_by(Country.Region) %>% summarise_all(sum) %>% column_to_rownames(var='Country.Region') %>% drop_na()
+
+```
+
+## Chi-Squared Test
+
+Looking at this contingency table we can see country and number of deaths for a particular day. This data is updated daily and can be altered appropriately to look at any day starting from January 22, 2020 up until present day. April 1st and 12th were picked simply because the numbers seemed to have "significantly" increased, particularly for the United States.
+
+This Chi-Squared value of 2.2e-16 means that we reject the null hypothesis that these variables are independent. Instead we can say that there is some sort of dependency on the country and there number of deaths. What causes this, whether it be weather, GPD per capita, number of hospital beds etc., needs further analysis, that is not included here.
+
+```{r chi sq,echo=FALSE, warning=FALSE}
+library(stats)
+head(covid_matrix)
+Chi_Deaths <- chisq.test(covid_matrix)
+Chi_Deaths
+```
+
+## Bar Plot for April 1st 2020
+
+Here is a simple bar plot looking at the total deaths by top 5 countires. 
+As of April 1st, Italy has the greatest number of deaths. Followed by Spain, US, France and then China.
+
+```{r bar,echo=FALSE}
+library(ggplot2)
+small_covid <- deaths %>% filter(Country.Region %in% c('US','China','France','Italy','Spain')) %>% select(Country.Region,X4.1.20) %>% drop_na()
+ggplot(small_covid, aes(x=Country.Region, y=X4.1.20)) + geom_bar(stat = 'identity', fill = 'blue') +xlab('Country') +ylab('Number of Deaths') +ggtitle('COVID-19 April 1st 2020 Deaths by Country')
+```
+
+## Bar Plot for April 12th 2020
+
+Then we will jump at look at April 12th, which we were analyzing above. 
+United States now is the leader in number of deaths instead on Italy, whose numbers have continued to rise as well. 
+
+```{r bar 2,echo=FALSE}
+library(ggplot2)
+small_covid <- deaths %>% filter(Country.Region %in% c('US','China','France','Italy','Spain')) %>% select(Country.Region,X4.12.20) %>% drop_na()
+ggplot(small_covid, aes(x=Country.Region, y=X4.12.20)) + geom_bar(stat = 'identity', fill = 'red') +xlab('Country') +ylab('Number of Deaths') +ggtitle('COVID-19 April 12th 2020 Deaths by Country')
+```
+
+```{r line, echo=FALSE}
+deaths[is.na(deaths)] <- 0
+linegr <- deaths %>% filter(Country.Region %in% c('US','China','France','Italy','Spain')) %>% group_by(Country.Region) 
+
+```
+

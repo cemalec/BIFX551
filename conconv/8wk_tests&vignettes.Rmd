@@ -1,0 +1,25 @@
+---
+title: "Week 8 - Test functions"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## What do?
+Look at one of the packages in the Tidyverse on github, like tidyr. Open the test folder and find the test for a function you are familiar with, what is one test that seems obvious, what is one that seems less obvious. Also look at one vignette, how is this similar to reports you have written in R-markdown. Is the data used in the vignette available in the same folder?
+
+### Tests
+## Separate
+Turns single character column into multople columns.
+Obvious test - test_that("missing values in input are missing in output")
+This seems obvious - if there is no value in the first place, there shouldn't be one after the function is performed.
+
+
+Less Obvious - test_that("list_indices truncates long warnings")
+This is not something I would have thought to check. If I am understanding the test correctly, when the package gives a warning, or elsewise lists out indices of a column, this test ensures that the message only lists the first three characters, instead of all of them. This helps keep the warning/message neat.
+
+### Vignette
+## Pivot
+The vignette for pivoting is similar to the ones I have written. It breaks down sections, making it easier to find what you are looking for. There are examples of code to show how to use certain things. I like how in depth the vignette is - mine are usually a little more vague. Many of the datasets included as examples are available either directly in R, or in the tidyR package - they are not included in the same folder as the vignette (although it appears there are some datasets in the vignette folder.)

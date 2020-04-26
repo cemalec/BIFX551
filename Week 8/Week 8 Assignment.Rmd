@@ -1,0 +1,9 @@
+---
+title: "Week 8 Assignment"
+author: "Caleb Timmons"
+date: "4/7/2020"
+output: html_document
+---
+I looked at the test for pivot_wider.  The expected one is a test to see if it works.
+
+The vignettes are more or less the same as the reports.  They are both markdown files with code chunks in them.  The data is kept in the same folder as the markdown file.

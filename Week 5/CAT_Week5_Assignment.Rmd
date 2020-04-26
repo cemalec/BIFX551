@@ -1,0 +1,51 @@
+---
+title: "Abalone Analysis"
+author: "Caleb Timmons"
+date: "2/25/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, eval = TRUE, include = FALSE}
+library(tidyverse)
+```
+
+```{r}
+abalone <- read.csv('abalone.data.txt')
+ab_summary <- abalone %>% group_by(Sex) %>% summarise(Length = mean(Len), Height = mean(Hgt), Diameter = mean(Dia))
+print(ab_summary)
+```
+
+```{r}
+ggplot(data = abalone) +
+  geom_boxplot(mapping = aes(x = Sex, y = Ring))
+```
+
+This graph show much more overlap between the age of infant and mature abalone than I was expecting.  Infants may need to be excluded from further analysis.
+
+```{r}
+ggplot(data = abalone) +
+  geom_point(mapping = aes(x = Ring, y = Len)) +
+  geom_smooth(mapping = aes(x = Ring, y = Len), se = FALSE)
+```
+
+This graph show the general shape of the trend and the possibility that polynomial regression will likely be needed. 
+
+```{r}
+ggplot(data = abalone) + 
+  geom_smooth(mapping = aes(x = Ring, y = Dia, color = Sex)) +
+  facet_wrap(~ Sex)
+```
+
+This graph appears to show that while male and female abalone follow roughly the same relationship between age and diameter, infant abalone follow a seperate one.
+
+```{r}
+ggplot(data = abalone) +
+  geom_smooth(mapping = aes(x = Ring, y = Wh.Wt, color = Sex))
+```
+
+This graph appears to show the same distinction for weight.

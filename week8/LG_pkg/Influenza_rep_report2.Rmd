@@ -1,0 +1,112 @@
+---
+title: "Influenza Reproducibility Report"
+output: html_document
+---
+```{r,echo = FALSE, message = FALSE}
+# Download and install appropriate libraries and packages.
+library(readr)
+library(dplyr)
+library(tidyverse)
+library(ggplot2)
+```
+
+# Data Source
+*All data is taken from the [WHO FluMart database](http://apps.who.int/flumart/Default?ReportNo=12).
+Data used here represents data from December 31, 2018 through February 9, 2020. Data is stored on a personal github to prevent changes.*
+
+```{r, message = FALSE}
+# Download and save the data.
+url3 <- "https://raw.githubusercontent.com/lglang/Datasets/master/Flu2019-2020.csv"
+download.file(url3, "Flu2019")
+flu_df <- read_csv("Flu2019")
+```
+
+## Overall Trends
+```{r, message = FALSE}
+# Seperate cases of flu by year
+flu19 <- flu_df %>% filter(Year == 2019)
+flu20 <- flu_df %>% filter(Year == 2020)
+# Plot cases of flu by year
+ggplot(data = flu19)+ 
+  geom_line(mapping = aes(Week, ALL_INF, color = "Flu 2019"))+
+  labs(x = "Week in the year",
+       y = "Positive cases of Influenza", title = "Total cases of Influenza A and B by week")+
+  geom_line(data = flu20, mapping = aes(Week, ALL_INF, color = "Flu 2020"))
+ggsave('flu_plot_total.png', plot = last_plot(), device = 'png')
+```
+
+The above chart shows the overall trends of influenza infections over the year. Red shows the total positive cases of flu in 2019, and blue is total positive cases of flu in 2020. It appears that the flu season either started earlier at the end of 2019, or has a greater infection rate, based on where the total cases were at week 1 2019 vs week 1 2020 - i.e, cases of flu were approximately 7000 during week 1 of 2019, vs the approximate 18000 during week 1 of 2020. 
+
+```{r, message = FALSE}
+# Filter to the first six weeks of both years.
+flu_wk1 <-flu_df %>% filter(Week < 7)
+# Plot mean of case numbers during the first six weeks of flu by year.
+ggplot(data = flu_wk1)+
+  geom_boxplot(mapping = aes(Year, ALL_INF, group = Year))+
+  labs(x = "Year",
+       y = "Positive cases of Influenza",
+       title = "Mean number of influenza cases in the first six weeks of 2019 and 2020")
+ggsave('flu_means_wk1.png', plot = last_plot(), device = 'png')
+
+t.test(flu_wk1$ALL_INF ~ flu_wk1$Year)
+```
+
+Above, a box plot showing the means of the first 6 weeks of 2019 and 2020. This is backed up by a T test comparing the means of the first 6 weeks of 2019 to the first 6 weeks of 2020. The mean for 2019 was ~10000, and the mean for 2020 was ~20000, about double the number of cases, and a significant amount according to the confidence interval and p-value. This information supports the working theory that there is a significant difference between infection in 2019 and 2020. 
+
+## A Closer Look
+
+```{r message=FALSE}
+# Extract subtype data
+flu_subtype <- flu_df %>% pivot_longer(cols = AH1:INF_B,
+                        names_to = "Subtype")
+# Filter to the first week of 2019 and 2020.
+subtype_wk1 <- flu_subtype %>% drop_na() %>% filter(Week == 1) %>% 
+  arrange(Subtype)
+# Plot the comparison of subtypes in 2019 and 2020.
+ggplot(data = subtype_wk1)+
+  geom_col(mapping = aes(Subtype, value, fill = Subtype))+
+  labs(x = "Subtype", y = "Number of cases", title = "Total weekly cases of Influenza by Subtype")+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))+
+  facet_wrap(~Year)
+```
+
+Above, two bargraphs showing the breakdown of cases by subtype in the first week of 2019 and the first week of 2020. It is interesting that the main difference between the two years is the prevelance of influenza B. While most subtypes of influenza are relatively equal between 2019 and 2020, cases of influenza B are much higherin 2020 than in 2019. There were approximately 180 cases in 2019 versus approximately 1300 cases in 2020. This is atypical of influenza; during a normal season, influenza B does not become prevelant until later in the season. [Source](https://www.outbreakobservatory.org/outbreakthursday-1/1/9/2020/united-states-influenza-2019-2020-season)
+
+```{r message = FALSE}
+# Filter to first week of 2019, and create percent catagory of subtype/total cases
+subtype_wk1_19 <- flu_subtype %>% drop_na() %>% filter(Week == 1, Year == 2019) %>% 
+  arrange(Subtype) %>% mutate(Percent = value/ALL_INF) %>% select(Subtype:Percent) %>%
+  slice(1:7)
+# Plot the percent cases of each subtype in a pie chart  
+ggplot(data = subtype_wk1_19)+
+  geom_col(mapping = aes(x = "", y = Percent, fill = Subtype))+
+  labs(x = "Subtype", y = "Number of cases", 
+       title = "Percentage of Influenza cases by Subtype, Week 1, 2019")+ coord_polar("y")
+# Same as above, but with 2020.
+subtype_wk1_20 <- flu_subtype %>% drop_na() %>% filter(Week == 1, Year == 2020) %>% 
+  arrange(Subtype) %>% mutate(Percent = value/ALL_INF) %>% select(Subtype:Percent) %>%
+  slice(1:6)
+
+ggplot(data = subtype_wk1_20)+
+  geom_col(mapping = aes(x = "", y = Percent, fill = Subtype))+
+  labs(x = "Subtype", y = "Number of cases", 
+       title = "Percentage of Influenza cases by Subtype, Week 1, 2020")+ coord_polar("y")
+
+# Pull out the peak week of the 2018-2019 flu season, week 8.
+subtype_wk13_19 <- flu_subtype %>% drop_na() %>% filter(Week == 13, Year == 2019) %>% 
+  arrange(Subtype) %>% mutate(Percent = value/ALL_INF) %>% select(Subtype:Percent) %>%
+  slice(1:7)
+ggplot(data = subtype_wk13_19)+
+  geom_col(mapping = aes(x = "", y = Percent, fill = Subtype))+
+  labs(x = "Subtype", y = "Number of cases", 
+       title = "Percentage of Influenza cases by Subtype, Week 13, 2019")+ coord_polar("y")
+
+```
+
+These graphs are similar to the above bargraphs, however the first two breakdown the subtypes as a percentage of total influenza cases. Again, it is obvious that the prevelance of influenza B is much higher in 2020 than in 2019. The final graph shows the peak of influenza B in the 2018-2019 flu season, and even at the highest, influenza B was not as prevelant as it currently is.
+
+## Final Words
+
+The 2019-2020 flu season has trended towards higher numbers of cases of influenza overall, and especially higher cases of influenza B than the 2018-2019 flu season. The exact cause of this unusual season remains to be seen, but may be linked with the potential early start to the season.
+
+Unfortunately, the WHO FluMart database has not been updated since week 6, and so with the current data set it is impossible to tell if the trend continues through the rest of 2020. However, the [CDC FluView](https://www.cdc.gov/flu/weekly/index.htm) reports that flu activity has decreased for the second week in a row, as of March 2, 2020. 

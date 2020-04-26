@@ -1,0 +1,71 @@
+---
+title: "Week 5 Assignment"
+author: "Caleb Timmons"
+date: "2/18/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## First Dataset
+
+Source: <https://datadryad.org/stash/dataset/doi:10.5061/dryad.00t8g>
+
+This dataset examines the effects of several treatments on the rate of honey bee visits.
+
+The main problem is there is some manipulation necessary to get the data fully ready for analysis.  Many integers need to be converted to factors among other steps.
+```{r}
+bees <- read.csv('bees.csv', header = TRUE)
+bees_df <- bees[,c("Plant_Code","Bee_Count","Temp_F","Wind_mph",'Barometric','Humidity')]
+summary(bees_df)
+```
+```{r, echo=FALSE}
+boxplot(bees$Bee_Count ~ bees$Sugar,
+        main = 'Beecounts for Sugar Treatment',
+        xlab = 'Sugar Treatment',
+        ylab = 'Bee Counts')
+```
+
+## Second Dataset
+
+Source: <http://mlr.cs.umass.edu/ml/datasets/Abalone>
+
+This dataset seeks to determine if there is a method of determining the age of an Abalone from physical measurments as opposed to ring counting in the shell.
+
+There are variable for Sex, Length, Diameter, Height, Whole Weight, Shucked Weight, Viscera Weight, Shell Weight, and rings.
+
+One potential problem is all measurements have been divided by 200.  Analysis may requrie undoing this.
+
+A possible question is determining a formula that can be used to determine the age given measurements.
+
+```{r}
+abalone <- read.csv('abalone.data.txt', header = TRUE)
+summary(abalone)
+```
+```{r, echo=FALSE}
+plot(abalone$Len~abalone$Ring,
+     main = 'Abalone Length vs Ring Number',
+     xlab = 'Ring Number',
+     ylab = 'Length')
+```
+
+## Third Dataset
+
+Source: <https://datadryad.org/stash/dataset/doi:10.5061/dryad.50720>
+
+This third dataset looks to determine if location has the same effect on average mass of fish as it does on the mass of land animals.
+
+A question could be what is the effect of latitude.
+
+```{r}
+ fish <- read.csv("fish.csv")
+summary(fish)
+```
+```{r, echo=FALSE}
+boxplot(fish$Weight.maxima..g.~fish$Species,
+        main = 'Mass of Fish Species',
+        xlab = 'Species',
+        ylab = 'Mass')
+```

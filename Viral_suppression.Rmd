@@ -1,0 +1,139 @@
+---
+title: 'Limiting vertical HIV transmission: A study of antiretroviral therapy duration
+  among pregnant women'
+author: "Lindsay Glang"
+output:
+  html_document: default
+  pdf_document: default
+df_print: paged
+---
+```{r,echo=FALSE, include=FALSE, message=FALSE}
+# Download and install appropriate libraries and packages.
+library(readr)
+library(dplyr)
+library(tidyverse)
+library(ggplot2)
+library(gridExtra)
+```
+# Dataset Source
+
+*Chagomerana, Maganizo B. et al. (2019), Data from: Optimizing prevention of HIV mother to child transmission: duration of antiretroviral therapy and viral suppression at delivery among pregnant Malawian women, Dryad, Dataset, https://doi.org/10.5061/dryad.sk2pg32. Dataset stored on personal github to prevent changes.*
+
+```{r, echo = FALSE, message = FALSE}
+# Download and save the data.
+url <- "https://raw.githubusercontent.com/lglang/Datasets/master/Viral%20suppression.csv"
+download.file(url, "viral")
+viral_df <- read_csv("viral")
+```
+# Background
+Human immunodeficiency virus (HIV) is considered a global epidemic by the World Health Organization, affecting over 37 million people worldwide. In 2018 an estimated 1071000 out of 1300000 pregnant women (approximately 82%) recieved antiretroviral treatment for prevention of mother-to-child transmission (MTCT, vertical transmission). [Data from the WHO](https://www.who.int/data/gho/data/indicators/indicator-details/GHO/estimated-percentage-of-pregnant-women-living-with-hiv-who-received-antiretrovirals-for-preventing-mother-to-child-transmission). A study by Chagomerana et al evaluated the association between duration of antiretroviral therapy (ART) and viral suppression by the time of delivery.
+
+# Methods
+The study focused on a cohort of 299 women initiating ART at a hospital in Malawi, Africa. All women were over the age of 16, and had either never been exposed to ART or had only minimal, single dose treatment. Duration of ART was measured in weeks from start date to delivery date (3 catagories: <12 weeks, 13-20 weeks, 21-35 weeks). CD4 cell count and viral load were measured using laboratory techniques with a viral load (VL) limit of detection at 40 copies/mL. A failure to achieve sufficent viral suppression was shown if VL>1000 copies/mL, and a failure to achieve complete suppression was shown if VL>40 copies/mL. 
+
+# Trends
+Figure 1  shows some overarching trends of the data, a bargraph showing the number of women who achieved some or all viral suppression after ART, and a heatmap showing how the duration of ART affected the level of suppression. According to these trends, the majority of women achieved complete viral suppression, with a greater level of effect when they had taken the therapy for a longer period of time. 
+
+# Statistics
+Figure 2 shows boxplots of the viral loads at the start of ART, and at the time of delivery, broken down into viral loads > 1000 (insufficient suppression), and loads > 40 (sufficient suppression - it is assumed that sufficient suppression includes viral loads > 40 but <1000). On the graphs, a 0 represents a viral load under 1000 or 40, and a 1 represents a viral load over 1000 or 40. In both cases (VL>1000, VL>40), there is no significance between the starting load and whether viral suppression was insufficient, sufficient, or total. (VL>1000 had a p-value of 0.83, and VL>40 had a p-value of 0.06.)
+
+# Conclusions
+From the analysis, it seems any amount of antiretroviral therapy is better than none at all, and it has an overwhelmingly positive effect on viral load at the time of delivery. There doesn't appear to be a statistical negative consequence on having a higher starting viral load and achieving either sufficient or total viral suppression. There is a positive correlation between a longer duration of ART and achieving total viral suppression. Not included in this current analysis (though included in the original study) is the effect of adherence to the ART, which may cause some bias. 
+
+```{r echo=FALSE, message=FALSE, fig.cap="Figure 1: Summary Figures"}
+# Remove dropouts and non-reporters 
+viral_na <- viral_df %>% drop_na(VL1000,VL40) 
+# Retrieve count of women
+viral_count <- viral_na %>% count(VL1000,VL40)
+# Pivot wider
+viral_wide <- viral_count %>% pivot_wider(VL1000:VL40, values_from = n, names_from=(VL1000:VL40))
+# Pivot longer again. There's definitely a better way to do this
+viral_long <- viral_wide %>% pivot_longer(`0_0`:`1_1`)
+# Graph of total counts of each suppresion status
+p1 <- ggplot(data=viral_long)+
+  geom_col(mapping=aes(x=name,y=value, fill=as.factor(name)))+
+  labs(title="Viral Suppression Count", x="Status of Suppression", y="Number of Women")+
+  scale_fill_discrete(name="Suppression Status", 
+                      labels=c("Total Suppression","Sufficient Suppression","Insufficient Suppression"))+
+  geom_text(aes(x=name,y=value,label = value), position = position_stack(vjust = 0.5))
+# Make a heatmap
+viral_dur2 <- viral_na %>% count(art_duration, VL1000, VL40) 
+viral_stdur <- viral_dur2 %>% pivot_wider(art_duration, values_from = n, names_from = VL1000:VL40)
+# Again, probably a better way to do this
+viral_stdur2 <- viral_stdur %>% pivot_longer(`0_0`:`1_1`)
+# Heatmap comparing ART duration to suppression status
+p2 <-ggplot(data=viral_stdur2)+
+  geom_tile(mapping=aes(x=art_duration, y=name, fill=value))+
+  labs(title="ART duration vs Viral Suppression",
+         x="ART Duration", y="Level of viral suppression")+
+  scale_fill_continuous(name="Number of Women")
+# Combine plots into one page
+require(gridExtra)
+grid.arrange(p1,p2, ncol=2, respect=TRUE)
+```  
+
+```{r echo=FALSE, message=FALSE, include=FALSE}
+t.test(viral_na$viralload~viral_na$VL40)
+t.test(viral_na$viralload~viral_na$VL1000)
+```
+
+```{r echo=FALSE, message=FALSE, fig.cap="Figure 2: Statistical Means", warning=FALSE}
+
+p3 <-ggplot(data=viral_na)+
+  geom_boxplot(mapping = aes(VL1000, viralload, group = VL1000), outlier.shape=NA)+
+  labs(title="Start VL vs sufficient VL suppression",
+       x="Viral load > 1000",
+       y="Starting Viral Load")+
+  ylim(0,100000)
+p4 <-ggplot(data=viral_na)+
+  geom_boxplot(mapping = aes(VL40, viralload, group = VL40), outlier.shape=NA)+
+  labs(title="Start VL vs total VL suppression",
+       x="Viral load > 40",
+       y="Starting Viral Load")+
+  ylim(0,100000)
+grid.arrange(p3,p4, ncol=2, respect=TRUE)
+```
+```{r echo=FALSE, message=FALSE, include=FALSE}
+# Graphs and analysis not included in final report
+
+# Jitter plot showing ART duration catagory to sufficient viral load suppression
+ggplot(data=viral_na)+
+  geom_jitter(mapping=aes(VL1000,art_duration), color="black")+
+  geom_abline(slope=0, intercept=0, color = "red")+
+  geom_abline(slope=0, intercept = 1, color = "blue")+
+  geom_abline(slope=0, intercept = 2, color = "green")+
+  labs(x="Viral Load > 1000",
+       y="Duration of ART",
+       title="ART duration and sufficient viral load suppression")
+
+# Jitter plot showing ART duration catagory to total viral load suppression
+ggplot(data=viral_na)+
+  geom_jitter(mapping=aes(VL40,art_duration), color="black")+
+  geom_abline(slope=0, intercept=0, color = "red")+
+  geom_abline(slope=0, intercept = 1, color = "blue")+
+  geom_abline(slope=0, intercept = 2, color = "green")+
+  labs(x="Viral Load > 40",
+       y="Duration of ART",
+       title="ART duration and complete viral load suppression")
+
+# Barplot showing number of women in each ART duration catagory. There is zero reason it is this complicated, but that is how it ended up
+viral0_0 <- viral_na %>% filter(VL1000==0, VL40==0) %>% select(art_duration, VL1000,VL40)
+viral0_1 <- viral_na %>% filter(VL1000==0, VL40==1) %>% select(art_duration, VL1000,VL40)
+viral1_1 <- viral_na %>% filter(VL1000==1, VL40==1) %>% select(art_duration, VL1000,VL40)
+viral_all <- full_join(viral0_0,viral0_1)
+viral_all2 <- full_join(viral_all,viral1_1) 
+viral_all <-viral_all2 %>% arrange(art_duration)
+viral_long <- viral_wide %>% pivot_longer(`0_0`:`1_1`)
+ggplot(data=viral_all)+
+  geom_bar(mapping=aes(x=art_duration, fill=as.factor(art_duration)))+
+  labs(title = "ART Duration Count", x= "ART Duration", y= "Number of Women")+
+  scale_fill_discrete(name = "Duration", labels = c("<12 Weeks", "13-20 Weeks", "21-35 Weeks"))
+
+# Point graph comparing ART duration to suppression status - another verson of the heatmap.
+viral_t <- viral_na %>% select(art_duration, VL1000,VL40)
+viral_t2 <- viral_t %>% unite(VL1000_VL40, c("VL1000", "VL40"))
+ggplot(data=viral_t2)+
+  geom_count(mapping=aes(VL1000_VL40, art_duration))
+
+# Linear model of ART duration to suppression status
+linear_model <- lm(data=viral_stdur, formula=art_duration ~ `0_0`+`0_1`+`1_1`)

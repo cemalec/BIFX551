@@ -1,5 +1,7 @@
 
 # An Example R Project
+
+[The app can be found here](https://cemalec.shinyapps.io/ExampleBIFX551/)
 ```{r}
 #
 # This is a Shiny web application. You can run the application by clicking
@@ -10,9 +12,9 @@
 #    http://shiny.rstudio.com/
 #
 
-library(shiny)
-library(dplyr)
-library(ggplot2)
+require(shiny)
+require(dplyr)
+require(ggplot2)
 
 data("ToothGrowth")
 
@@ -25,24 +27,24 @@ ui <- fluidPage(
    # Sidebar with a slider input for data range
    sidebarLayout(
       sidebarPanel(
-         sliderInput("range",
+         sliderInput("range", #A slider that selects range of len data
                      "Input range:",
                      min = min(ToothGrowth$len),
                      max = max(ToothGrowth$len),
-                     value = c(min(ToothGrowth$len), max(ToothGrowth$len))),
-         textInput("xlab", "x label", "len"),
-         textInput("ylab", "y label", "dose"),
-         textInput("clab", "color label", "supp"),
-         textInput("title", "title", "ToothGrowth"),
+                     value = c(min(ToothGrowth$len), max(ToothGrowth$len))), 
+         textInput("xlab", "x label", "len"), #Labels the x-axis
+         textInput("ylab", "y label", "dose"), #Labels the y-axis
+         textInput("clab", "color label", "supp"), #Labels the color legend
+         textInput("title", "title", "ToothGrowth"), #Creates a title for the graph
          
-         textOutput("modelSlopes_VC"),
-         textOutput("modelSlopes_OJ")
+         textOutput("modelSlopes_VC"), #Slope of VC supplement linear model
+         textOutput("modelSlopes_OJ") #Slope of OJ supplement linear model
       ),
       
       # Show a plot of lines as well as linear model output
       mainPanel(
-         plotOutput("distPlot"),
-         actionButton("savePlot", "Save Plot")
+         plotOutput("distPlot"), #Plot
+         actionButton("savePlot", "Save Plot") #Saves graph
       )
    )
 )
@@ -90,6 +92,8 @@ server <- function(input, output) {
    })
    
    #Save the Plot
+   #Keep separate from renderPlot or graph will save everytime input changes
+   #after first save.
    observeEvent(input$savePlot,{
      g <- plotData()
      ggsave("myPlot.png",plot = g, device="png",path="~/")
@@ -105,7 +109,7 @@ server <- function(input, output) {
    #Displays the linear model slope for VC supplement
    output$modelSlopes_VC <- renderText({
      lm_vc <- lm_vc()
-     slope_vc <- round(lm_vc$coefficients[1],2)
+     slope_vc <- round(lm_vc$coefficients[2],2)
      vc_text <- paste0(c(input$ylab,"vs.",input$xlab,"for VC -",
                         as.character(slope_vc)),sep=' ')
    })
@@ -113,7 +117,7 @@ server <- function(input, output) {
    #Displays the linear model slope for OJ supplement
    output$modelSlopes_OJ <- renderText({
      lm_oj <- lm_oj()
-     slope_oj <- round(lm_oj$coefficients[1],2)
+     slope_oj <- round(lm_oj$coefficients[2],2)
      oj_text <- paste0(c(input$ylab,"vs.",input$xlab,"for OJ -",
                         as.character(slope_oj)),sep=' ')
    })
@@ -121,5 +125,6 @@ server <- function(input, output) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
+
 
 ```

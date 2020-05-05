@@ -1,6 +1,6 @@
 # Your portfolio:
 - Put every project in a separate, labeled repository
-- Insert a REAME.md file into each repository that summarizes the project (problem statement, methods, conclusions)
+- Insert a README.md file into each repository that summarizes the project (problem statement, methods, conclusions)
 - If there are files or links that the reader should view, put them in the README and make them easy to find
 - Clean up your code and add comments so that someone who is technically literate, but not an expert in the subject matter of your project can understand your process
 - Include documents related to the project such as slides or papers

@@ -11,4 +11,4 @@
 - Fork the repository
 - Rename the repository to my_repo (or whatever you want)
 - Commit to the gh-pages branch
-- You now have a site at github.**user_name**.io/my_repo
+- You now have a site at **user_name**.github.io/my_repo

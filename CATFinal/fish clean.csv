@@ -1,0 +1,701 @@
+state,spc,loc,max.wt,lat,lon,elev,air.temp,gdd
+Texas,American Eel,Lake Lavon ,698.5,33.047708,-96.486789,144,16.7,3084
+Colorado,American Eel,Flagler Reservoir ,1389.1,39.287066,-102.987456,1436,16.4,2929
+Kansas,American Eel,Kansas River ,2013.9,39.074818,-95.739244,270,9.6,1783
+Missouri,American Eel,Meramec River ,2041.2,38.547029,-90.54695,122,10.1,1646
+Arkansas,American Eel,Arkansas River ,2154.6,34.59204,-92.145413,67,12.2,2248
+Nebraska,American Eel,Missouri River ,2268,42.591786,-96.710197,383,12.3,2049
+Mississippi,American Eel,Mississippi River - near Vicksburg,2296.3,32.325876,-90.898852,14,9.9,1676
+Ontario,American Eel,Ottowa River,2313.3,45.450667,-76.307957,144,7.2,1584
+South Dakota,American Eel,Missouri River ,2353,44.185696,-99.689832,508,18.6,3431
+Oklahoma,American Eel,Illinois River ,2466.4,35.489263,-95.097736,140,12,2140
+Alabama,American Eel,Lake Shechi ,2494.8,33.012968,-86.826126,163,8.8,1847
+Maryland,American Eel,Sassafras River,2563.1,39.367528,-75.872581,1,5.9,1170
+Vermont,American Eel,Lake Champlain ,2835,44.586581,-73.38009,88,10.3,1745
+Minnesota,American Eel,Saint Croix River - Stillwater,2976.7,45.061047,-92.803169,204,8.3,1370
+New Jersey,American Eel,Round Valley Reservoir,3090.1,40.613892,-74.817376,116,15.7,2854
+Michigan,American Eel,Saint Clair Lake ,3374.7,42.43565,-82.691543,169,5.9,1135
+New York,American Eel,Cayuga Lake ,3572,42.743841,-76.747526,116,7.1,1676
+New Hampshire,American Eel,Crystal Lake ,3628.7,43.602879,-72.088097,274,17.6,3319
+Connecticut,American Eel,Shetucket River ,4621,41.54887,-72.049141,26,6.6,1173
+Florida,American Shad,Saint Johns River ,2353,29.005178,-81.37991,0,8.8,1460
+Rhode Island,American Shad,Runnings River,2948.3,41.780036,-71.327086,2,11.9,1937
+Delaware,American Shad,Brandywine Creek ,3061.7,39.801436,-75.586989,75,20.9,4126
+South Carolina,American Shad,Santee River ,3175.1,33.235278,-75.459444,4,18.7,3545
+North Carolina,American Shad,Tar River ,3600.4,35.5525,-77.084722,0,13.3,2191
+Maryland,American Shad,Wicomico River,3685.4,38.345084,-75.661956,4,8,1383
+Georgia,American Shad,Savannah River ,3713.8,32.952402,-81.522078,27,4.5,963
+Connecticut,American Shad,Connecticut River ,4195.7,41.720189,-76.623135,13,12.7,2125
+New York,American Shad,Hudson River ,4195.7,41.692624,-73.948044,0,9.1,1523
+Pennsylvania,American Shad,Delaware River ,4337.5,40.711591,-75.199276,109,15.8,2814
+New Brunwick,American Shad,Miramichi River,4961.2,46.972207,-65.58016,2,9.9,1625
+New Jersey,American Shad,Delaware River ,5017.9,39.906605,-75.149314,6,10.2,1615
+Massachusetts,American Shad,Connecticut River ,5102.9,42.450215,-72.585581,38,16.5,2870
+Vermont,Black Crappie,Lake Champlain ,1120.4,44.593886,-73.347637,20,14.1,2418
+Rhode Island,Black Crappie,Rhode Island Coast,1360.8,41.965659,-71.643388,140,15,2719
+South Dakota,Black Crappie,SDSU pond,1587.6,44.309671,-96.783349,500,12.5,2102
+New York,Black Crappie,Duck Lake ,1701,44.114023,-74.439581,620,19.2,3652
+Florida,Black Crappie,Lake Talquin ,1729.3,30.466149,-84.630145,60,15.6,2749
+Michigan,Black Crappie,Lincoln Lake ,1868.8,43.244032,-85.373754,260,16.2,2820
+Pennsylvania,Black Crappie,Hammond Lake ,1896,41.894985,-77.164507,440,12.9,2295
+Georgia,Black Crappie,Acrees Lake ,1927.8,34.252493,-84.775535,260,12.3,2125
+Mississippi,Black Crappie,Arkabutla Reservoir ,1927.8,34.724324,-90.079349,60,8.3,1638
+Tennessee,Black Crappie,Browns Creek Lake ,1927.8,35.732025,-88.291728,140,13.9,2382
+Georgia,Black Crappie,Lake Spivey ,1927.8,33.51541,-84.292568,260,19.5,3700
+Alabama,Black Crappie,Fort Payne Res,1956.1,34.517509,-85.665939,380,9.3,1402
+Wisconsin,Black Crappie,Gile Flowage ,2041.2,46.398807,-90.224503,420,8.2,1483
+Ohio,Black Crappie,Private Pond,2041.2,40.814674,-81.977564,340,6.8,1540
+Missouri,Black Crappie,Private Pond,2041.2,38.672419,-91.88133,200,16,2827
+Illinois,Black Crappie,Rend Lake ,2041.2,38.111526,-88.970108,120,11.7,2106
+Iowa,Black Crappie,Green Castle Lake ,2069.5,41.942541,-92.858027,280,4.5,938
+Delaware,Black Crappie,Noxontown Pond ,2069.5,39.427554,-75.685832,0,15.3,2636
+Arkansas,Black Crappie,Oladale Lake ,2069.5,35.028143,-93.236312,140,9.4,1514
+Massachusetts,Black Crappie,Jakes Pond,2097.9,41.8276,-70.604949,40,14.4,2605
+Oklahoma,Black Crappie,Private Pond,2097.9,36.7676,-94.809106,240,6.8,1068
+Indiana,Black Crappie,Private Pond,2126.2,38.9915,-85.684578,200,8.5,1462
+Kentucky,Black Crappie,Watershed Lake,2211.3,37.033313,-87.594097,160,17.4,3201
+North Carolina,Black Crappie,Asheboro City Lake #4 ,2239.6,35.706592,-79.813668,180,5.7,1353
+South Carolina,Black Crappie,Lake Moultrie ,2268,33.321744,-80.140359,20,14.8,2636
+Minnesota,Black Crappie,Vermillion River ,2268,44.665346,-92.99293,280,17.4,3275
+Louisiana,Black Crappie,Louisianna Bayou,2721.6,29.484132,-92.055548,0,6.6,1173
+Texas,Black Crappie,lake Fork,3968.9,32.821106,-95.567567,120,3.6,900
+New York ,Bluegill,Kohlbach Pond  ,1134,42.305676,-76.241801,480,16.5,2954
+Pennsylvania ,Bluegill,Keystone Lake  ,1162.3,40.750548,-79.28603,360,16.2,2957
+Wisconsin ,Bluegill,Lake Michigan  ,1185,44.561337,-88.000368,180,22.7,4652
+West Virginia ,Bluegill,unknown pond - Randolph County,1247.4,38.809256,-80.008776,720,16.2,2820
+Michigan ,Bluegill,Vaughn Lake  ,1247.4,44.539119,-83.726555,280,11.6,2061
+Minnesota ,Bluegill,Alice Lake  ,1275.7,47.22202,-95.083426,460,9.6,1574
+Nebraska ,Bluegill,Grove Lake  ,1275.7,42.386922,-98.119689,480,9.6,1811
+Florida ,Bluegill,Crystal Lake  ,1338.1,28.026707,-81.910233,40,14,2470
+Tennessee ,Bluegill,Fall Creek  ,1360.8,36.288093,-83.220052,340,6.8,1269
+Tennessee ,Bluegill,Pond,1360.8,35.602886,-85.230841,520,3.3,1084
+Missouri ,Bluegill,Private Pond Bevier ,1360.8,38.951705,-92.334072,200,17,3135
+Iowa ,Bluegill,Private Pond,1417.5,41.292237,-93.987843,320,12.1,2136
+South Carolina ,Bluegill,Private Pond,1474.2,34.725341,-80.677079,160,9.5,1891
+Arkansas ,Bluegill,Private Pond,1474.2,35.20105,-91.831833,100,7.6,1240
+Indiana ,Bluegill,Private Pond,1474.2,40.700483,-79.182145,360,13,2085
+Ohio ,Bluegill,Salt Fork Reservoir  ,1487.8,40.105071,-81.55651,260,11,1865
+Georgia ,Bluegill,Shamrock Lake  ,1502.5,33.480526,-84.300944,260,9.2,1527
+Mississippi ,Bluegill,Private Pond,1564.9,32.354668,-89.398528,120,15.3,2693
+Illinois ,Bluegill,Private Pond,1587.6,39.055496,-88.090076,160,14.4,2498
+Kentucky ,Bluegill,Strip mine lake ,1899.4,37.315309,-87.579129,120,12.6,2108
+North Carolina ,Bluegill,Private Pond,1956.1,35.372587,-82.43194,700,9.4,1496
+Alabama ,Bluegill,Ketona Lakes by Birmingham ,2154.6,33.597434,-86.76332,180,6.5,1272
+Nebraska ,Bowfin,Dead Timber Lake  ,3628.7,41.71667,-96.69167,400,16.8,3084
+New Hampshire ,Bowfin,Wilson Pond  ,3997.3,42.89667,-72.26333,200,16.9,3104
+West Virginia ,Bowfin,Ohio River,4195.7,38.55614,-82.28842,240,22.4,4573
+New Jersey ,Bowfin,Delaware River,4649.3,40.16611,-74.7261802,20,20.1,3923
+Minnesota ,Bowfin,French Lake  ,4961.2,45.20786,-94.164297,320,12.9,2295
+Minnesota ,Bowfin,St. Croix River ,5102.9,45.82528,-95.47694,420,9.5,1652
+Iowa ,Bowfin,Mississippi River  ,5244.7,42.72627,-91.007103,260,8.6,1683
+Ohio ,Bowfin,Nettle Lake  ,5302.5,41.6825,-84.72583,300,13.7,2344
+New York ,Bowfin,Basha Kill  ,5810.5,41.53529,-74.515843,320,18.4,3499
+Wisconsin,Bowfin,Willow Floage,5925,45.25167,-91.29,320,8.2,1421
+Michigan ,Bowfin,Little Crooked Lake  ,6350.3,42.54669,-83.84594,280,4.2,1349
+Vermont ,Bowfin,Missisquoi River  ,6577.1,44.99556,-73.14917,20,6.9,1557
+Kentucky ,Bowfin,Green River  ,6840.2,37.24528,-85.33944,240,17.6,3294
+Tennessee ,Bowfin,Reelfoot Lake  ,7002.3,36.35167,-89.40333,80,13.3,2393
+Georgia ,Bowfin,Foster State Park ,7257.5,30.82286,-82.364173,20,8.9,1799
+Indiana ,Bowfin,Pine Lake  ,7257.5,41.63138,-86.747923,200,6.9,1297
+Illinois ,Bowfin,Rend Lake  ,7427.6,38.11153,-88.970108,120,11.3,1836
+Virginia ,Bowfin,Lake Cahoon ,7484.3,36.75419,-76.655173,20,10.2,1715
+Arkansas ,Bowfin,Arkansas Swamp,7852.8,33.593,-91.210346,40,16.8,3050
+Texas ,Bowfin,Lake Fork  ,8005.9,32.80417,-95.53917,120,8.6,1533
+North Carolina ,Bowfin,Black River  ,8136.3,34.40217,-78.095584,0,17.7,3176
+Alabama ,Bowfin,Lake Tuscaloosa ,8334.8,33.33453,-87.558126,100,14.5,2581
+Mississippi ,Bowfin,Ross Barnett Reservoir  ,8561.5,32.63,-89.74167,80,17.4,3275
+Missouri ,Bowfin,Duck Creek  ,8618.2,37.02,-90.09,100,6.1,1191
+Florida ,Bowfin,Lake Kissimmee  ,8618.2,27.918,-81.284917,0,14.8,2497
+Louisiana ,Bowfin,"Toledo Bend, Reservoir",9298.6,31.19639,-93.57194,40,11.6,1989
+South Carolina ,Bowfin,Forest Lake  ,9752.2,34.15628,-79.841595,40,6.8,1460
+Kentucky,Brook Trout,Martins Fork ,595.3,36.730197,-83.275837,401,8.7,1486
+South Carolina,Brook Trout,Chattooga River ,1077.3,34.816253,-83.295655,401,14,2323
+Rhode Island,Brook Trout,Wyoming Pond,1701,41.520593,-71.696628,28,8.2,1446
+Tennessee,Brook Trout,Hiwassee River ,1757.7,35.238475,-84.707503,229,8.5,1461
+Indiana,Brook Trout,Lake Gage ,1800.2,41.702987,-85.112924,288,7.5,1526
+New York,Brook Trout,Raquette Lake,2395.5,43.854476,-74.648826,539,12.5,2145
+Virginia,Brook Trout,Stony Creek ,2551.5,37.904028,-78.899467,279,8.1,1440
+Georgia,Brook Trout,Waters Creek ,2551.5,34.679805,-83.937964,535,-7.4,189
+Vermont,Brook Trout,Paran Creek ,2608.2,42.912025,-73.24872,163,9.1,1438
+Maryland,Brook Trout,North Branch Potomac River - below Randolph Dam,2771.2,39.431609,-79.114362,371,6.9,1127
+Minnesota,Brook Trout,Pigeon River ,2880.3,48.002083,-89.569933,197,8.3,1473
+Pennsylvania,Brook Trout,Fishing Creek ,3175.1,41.132084,-76.328994,289,2.3,825
+Iowa,Brook Trout,Fountain Springs Creek ,3175.1,42.614209,-91.310192,283,5.9,1170
+New Jersey,Brook Trout,Rockaway River ,3260.2,40.901405,-74.462807,149,10.1,1654
+Illinois,Brook Trout,Lake Michigan ,3316.9,42.270133,-87.809601,169,4.6,952
+North Carolina,Brook Trout,Raven Fork ,3373.6,35.522612,-83.280895,655,11.7,1968
+New Hampshire,Brook Trout,Pleasant Lake ,4082.3,43.427455,-71.954953,249,1.7,773
+Maine,Brook Trout,Square Pond,4082.3,43.550032,-70.879195,159,8.6,1448
+Connecticut,Brook Trout,Blackwell Brook ,4167.4,41.72694,-71.955833,40,-5.7,211
+Michigan,Brook Trout,Clear Lake ,4309.1,42.508058,-85.269014,288,9.1,1411
+Wisconsin,Brook Trout,Prairie River,4507.6,45.367398,-89.573261,453,13.8,2291
+Massachusetts,Brook Trout,Ashfield Lake,4535.9,42.530228,-72.799498,381,14.2,2456
+Wisconsin,Brook Trout,Lake Michigan ,4564.3,43.36186,-87.894277,220,7.1,1197
+Quebec,Brook Trout,George River,4989.5,57.133049,-65.292082,243,11.1,1840
+West Virginia,Brook Trout,Shavers Fork,4989.5,38.910395,-79.724723,677,9.4,1496
+Ontario,Brook Trout,Nipigon River,6492,49.085351,-88.323916,194,4.9,1176
+Manitoba,Brook Trout,Churchill River,,58.118473,-94.616756,68,7.4,1224
+Illinois,Brown Bullhead,Weldon Springs ,737.1,40.120586,-88.923389,212,10.1,1646
+Ontario,Brown Bullhead,401 Pond Near Chatham,1020.6,42.404802,-82.191038,180,20,3846
+New Hampshire,Brown Bullhead,Wilson Pond ,1161.2,42.901156,-72.262286,145,16.7,3018
+Tennessee,Brown Bullhead,Chickamauga Reservoir ,1304.1,35.233097,-85.077889,214,10.2,1879
+Connecticut,Brown Bullhead,Shaw Lake ,1360.8,41.521227,-72.329633,107,8.9,1542
+Missouri,Brown Bullhead,Lock Loma Lake ,1445.8,36.817002,-90.427206,109,3.6,1075
+Michigan,Brown Bullhead,Coldbrook Lake ,1642,42.253652,-85.356015,286,17.2,3219
+South Dakota,Brown Bullhead,Big Stone Lake ,1672.6,45.372558,-96.51647,312,14,2534
+North Carolina,Brown Bullhead,Buckhall Creek ,1701,34.965889,-78.118481,40,6.9,1297
+Wisconsin,Brown Bullhead,Nelson Lake ,1701,46.101923,-91.457867,385,11.7,1968
+New Jersey,Brown Bullhead,Lake of the Woods - Fort Dix,2041.2,40.01729,-74.570188,30,10.6,1768
+Georgia,Brown Bullhead,Private Pond,2494.8,32.78446,-82.94461,65,16.2,2920
+Florida,Brown Bullhead,Little Cedar Creek ,2579.8,30.439127,-81.648708,3,9.6,1664
+Mississippi,Brown Bullhead,Private ond - near Harrisville,2780.5,31.970117,-90.069535,104,8.7,1504
+Minnesota,Brown Bullhead,Shallow Lake ,3203.5,47.126961,-93.305744,389,6,1469
+New York,Brown Bullhead,Lake Mahopac,3345.2,41.384546,-73.740431,200,14.2,2456
+Rhode Island,Brown Bullhead,Rhode Island Coast,4281.9,41.964035,-71.431666,76,5,1236
+Texas,Brown Trout,Guadalupe River ,3229.6,29.851926,-98.159549,223,4.2,696
+Rhode Island,Brown Trout,Wallum Lake,3430.3,42.011978,-71.769662,179,6.6,1057
+Ohio,Brown Trout,Lake Erie ,6645.1,41.72182,-81.854524,153,14.7,2644
+Virginia,Brown Trout,South Fork Holston River ,6690.5,36.514506,-82.141669,459,6.9,1004
+Iowa,Brown Trout,North Prairie Lake ,6974,42.48261,-92.46196,279,2.5,1106
+Manitoba,Brown Trout,Laurie Lake,7257.5,56.61218,-101.82659,370,8.2,1440
+West Virginia,Brown Trout,South Branch ,7257.5,39.153294,-78.913813,223,14.5,2501
+New Hampshire,Brown Trout,Connecticut River ,7427.6,42.921755,-72.525472,79,4.8,1045
+Minnesota,Brown Trout,Lake Superior ,7597.7,46.861539,-91.94379,170,8.2,1446
+Connecticut,Brown Trout,East Twin Lake ,7654.4,42.033653,-73.38012,223,10.3,1786
+Oklahoma,Brown Trout,Mountain Fork River,7824.5,34.430713,-94.662908,199,7.8,1640
+South Carolina,Brown Trout,Lake Jocassee ,7980.4,34.981285,-82.923263,340,12.8,2161
+Saskatchewan,Brown Trout,Piprell Lake,8051.3,54.138954,-104.907853,600,8.1,1440
+Maryland,Brown Trout,North Branch Potomac River - at Barnum,8249.7,39.327068,-79.280263,713,-3.3,514
+Georgia,Brown Trout,Chattahoochee River ,8334.8,33.96188,-84.385831,247,8.3,1274
+Massachusetts,Brown Trout,Wachusett Reservoir ,8901.7,42.389199,-71.717761,117,8.7,1445
+Pennsylvania,Brown Trout,Walnut Creek ,8901.7,42.060926,-80.224453,196,8.9,1542
+Nebraska,Brown Trout,Snake River ,9100.2,42.650879,-100.859951,859,4.6,863
+New Mexico,Brown Trout,Chama River ,9185.2,36.871289,-106.584203,2361,14.7,2683
+Kentucky,Brown Trout,Cumberland River - Lake Cumberland tailwaters,9525.4,36.871311,-85.147883,167,1.6,786
+New Jersey,Brown Trout,Round Valley Reservoir ,9695.5,40.6304,-74.831391,129,9.5,1762
+Alberta,Brown Trout,Waterton Reservoir,9928,49.301012,-113.692856,1239,7,1383
+Washington,Brown Trout,Sullivan Lake ,9979,48.807334,-117.291941,791,7.8,1440
+Vermont,Brown Trout,Sherman Reservoir ,10064.1,42.737588,-72.927601,336,10.3,1745
+Arizona,Brown Trout,Reservation Lake ,10390.1,33.846019,-109.510694,2758,4.6,1072
+Maine,Brown Trout,Square Pond,10574.4,43.550032,-70.879195,159,8.3,1373
+South Dakota,Brown Trout,Canyon Lake ,11113,44.059398,-103.291602,1028,13.3,2243
+North Carolina,Brown Trout,Nantahala River ,11169.7,35.338073,-83.586465,517,4.6,1221
+Wyoming,Brown Trout,Flaming Gorge Reservoir ,11708.3,40.999356,-109.569082,1844,9.7,1572
+California,Brown Trout,Upper Twin Lake ,12020.2,40.501854,-121.37187,1998,15.5,2808
+Missouri,Brown Trout,Bull Shoals Lake ,12161.9,36.499025,-92.770514,220,8.9,1341
+Idaho,Brown Trout,Ashton Reservoir,12388.7,44.097809,-111.492187,1578,6.3,1097
+Nevada,Brown Trout,Cave Lake ,12388.7,39.188271,-114.693814,2224,9.5,1484
+Oregon,Brown Trout,Paulina Lake ,12842.3,43.721121,-121.25754,1933,8.5,1462
+Tennessee,Brown Trout,Clinch River ,13040.8,36.20675,-84.080434,260,0.3,831
+Montana,Brown Trout,Wade Lake ,13154.2,44.821342,-111.578764,1899,10.3,1457
+Indiana,Brown Trout,Lake Michigan ,13239.2,41.757321,-87.192164,154,8.2,1470
+Colorado,Brown Trout,Roaring Judy Ponds ,13834.6,38.663554,-106.842333,2467,13.1,2268
+North Dakota,Brown Trout,Garrison Tailrace ,14373.2,47.484093,-101.434318,511,19.4,3753
+New York,Brown Trout,Lake Ontario ,15025.2,43.506843,-77.569322,0,6.1,1236
+Utah,Brown Trout,Flaming Gorge Reservoir ,15252,40.91849,-109.439297,1844,6.5,1162
+Ontario,Brown Trout,Lake Ontario near Mississauga,15535.5,43.474004,-79.457958,0,13,2149
+Michigan,Brown Trout,Coldbrook Lake,15677.3,42.256645,-85.35247,286,8.2,1371
+Illinois,Brown Trout,Lake Michigan ,16655.3,42.264855,-87.443226,102,11,1907
+Arkansas,Brown Trout,Little Red River ,18257.1,35.508845,-91.993814,124,8,1333
+Wisconsin,Brown Trout,Lake Michigan ,18824.1,42.771175,-87.715817,158,7.5,1351
+Nebraska,Burbot,Missouri River ,2976.7,42.832426,-97.219883,351,-3,515
+Indiana,Burbot,Lake Michigan ,3487,41.744932,-87.129295,156,1.4,754
+New Hampshire,Burbot,Sunapee Lake ,5051.9,43.380244,-72.052742,333,8,1266
+South Dakota,Burbot,Lake Sharpe ,5528.2,44.247757,-99.896228,501,10.3,1786
+Idaho,Burbot,Kootenai River ,6350.3,48.70194,-116.191985,541,0,772
+Ontario,Burbot,"Jessie Lake, Thunder Bay",7203,50.047693,-90.94121,429,4.1,876
+New York,Burbot,Black River Bay ,7597.7,43.970361,-76.1117,64,2.3,997
+Manitoba,Burbot,Athapapuskow Lake,7711.1,54.542207,-101.656931,300,6.3,1454
+Washington,Burbot,Bead Lake,7721.6,48.298845,-117.111678,869,8.4,1746
+Montana,Burbot,Missouri River - Wolf Point,7747.4,48.074213,-105.647492,603,7.1,1217
+Ohio,Burbot,Lake Erie ,7860.7,41.563549,-82.099262,160,6.7,1208
+Wisconsin,Burbot,Superior Lake ,8221.4,47.222611,-90.446095,101,10.6,1786
+Michigan,Burbot,Saint Marys River Munuscong Bay,8278.1,46.178022,-84.037083,202,1.4,819
+Alberta,Burbot,Marie Lake,8493.5,54.634077,-110.299526,574,0.5,846
+Saskatchewan,Burbot,Candle Lake,8504.9,53.75174,-105.249716,501,7,1696
+Minnesota,Burbot,Lake of the Woods - Baudette,8703.3,49.08668,-94.862725,324,7.4,1310
+Alaska,Burbot,Louise Lake ,11226.4,61.204008,-143.006266,514,4.3,931
+Oklahoma,Chain Pickerel,Mountain Fork ,1190.7,34.431978,-94.668017,207,19.5,3732
+Texas,Chain Pickerel,Pat Mayse Lake ,2154.6,33.834365,-95.595866,141,14.7,2644
+Missouri,Chain Pickerel,Clearwater Dam Spillway ,2296.3,37.133299,-90.769008,141,8.5,1462
+Kentucky,Chain Pickerel,Forked Lake ,2438.1,36.851861,-89.104996,92,12.9,2136
+Florida,Chain Pickerel,Lake Talquin,2608.2,30.435251,-84.566767,21,19.2,3652
+Louisiana,Chain Pickerel,Kincaid Lake,2664.9,31.27653,-92.625335,28,15.2,2715
+West Virginia,Chain Pickerel,Tuckahoe Lake ,2807.7,37.741811,-80.278208,630,19.1,3629
+Mississippi,Chain Pickerel,Bay Springs Lake ,2835,34.55793,-88.319072,124,7.3,1265
+Vermont,Chain Pickerel,Harriman Reservoir ,2835,42.826782,-72.894377,461,13.3,2191
+Vermont,Chain Pickerel,Harriman Reservoir ,2835,42.826782,-72.894377,461,7.2,1322
+South Carolina,Chain Pickerel,Lake Marion ,2835,33.53052,-80.468081,23,15.7,2730
+Ohio,Chain Pickerel,Long Lake ,2835,41.009254,-81.541816,295,13.3,2402
+Alabama,Chain Pickerel,Dyas Creek ,2863.3,30.958269,-87.678767,45,6.5,1275
+Maine,Chain Pickerel,Androscoggin Lake,2948.3,44.320352,-70.080785,82,11.2,1818
+Rhode Island,Chain Pickerel,Beach Pond,3033.4,41.577829,-71.793385,90,7.1,1212
+Nova Scotia,Chain Pickerel,Grand Lake,3061.7,44.8803,-63.576101,75,14.8,2519
+Delaware,Chain Pickerel,Horsey Pond ,3260.2,39.023919,-75.513299,3,6,904
+Maryland,Chain Pickerel,Johnson Pond ,3288.5,38.380132,-75.598621,4,9.8,1591
+Tennessee,Chain Pickerel,Kentucky Reservoir ,3373.6,36.361273,-87.995011,110,15.5,2808
+Virginia,Chain Pickerel,Lake Shawnee ,3458.6,37.54275,-77.817072,82,6,1035
+Arkansas,Chain Pickerel,Little Red River ,3458.6,35.485761,-91.960746,99,10.1,1646
+Connecticut,Chain Pickerel,Wauregan Pond ,3572,41.751691,-71.910864,44,18.1,3379
+North Carolina,Chain Pickerel,Gaston Reservoir ,3628.7,36.501064,-77.868552,60,13.9,2432
+New Hampshire,Chain Pickerel,Plummer Lake ,3628.7,43.562855,-71.612251,191,17.3,3236
+New York,Chain Pickerel,Toronto Lake ,3657.1,41.630927,-74.882144,384,6.5,1162
+Pennsylvania,Chain Pickerel,Long Pond,4048.3,41.666502,-75.340248,412,6.5,1162
+New Jersey,Chain Pickerel,Lower Aetna Lake ,4167.4,39.860081,-74.801544,17,13.2,2247
+Massachusetts,Chain Pickerel,Laurel Lake,4224.1,42.622317,-72.372179,233,10.7,1818
+Saskatchewan,Channel Catfish,Qu'Appelle River,6407,50.720793,-104.731948,487,15.3,2719
+Wyoming,Channel Catfish,Flaming Gorge Reservoir,12247,41.070276,-109.570913,1849,15.2,2770
+Montana,Channel Catfish,Castle Rock Lake ,12324.1,45.890493,-106.641025,1000,9.1,1553
+Kentucky,Channel Catfish,Private Pond,12836.7,38.3833326,-82.691543,218,22.1,4449
+Ontario,Channel Catfish,Berford Lake,13154.2,44.811104,-81.181223,209,19,3663
+New York,Channel Catfish,Lake Lauderdale ,13607.8,43.090188,-73.37308,164,13.1,2321
+West Virginia,Channel Catfish,Patterson Creek ,15140.9,39.571338,-78.729456,182,13.1,2342
+Missouri,Channel Catfish,Lake Jacomo ,15705.6,38.979358,-94.326976,254,9.9,1924
+Oklahoma,Channel Catfish,Taft Lake,16301,35.738433,-95.530255,199,13.9,2491
+Colorado,Channel Catfish,Aurora Reservoir,16499.4,39.612187,-104.661812,1810,11.9,2070
+Kansas,Channel Catfish,Mined Land,16556.1,37.114248,-94.810595,274,6.1,1124
+Texas,Channel Catfish,Pedernales River ,16556.1,30.421594,-98.090856,247,6.1,1124
+New Mexico,Channel Catfish,Stubblefield Lake ,16556.1,36.58001,-104.657976,1871,8.1,1654
+Indiana,Channel Catfish,"Lake, Vanderburgh County",17009.7,38.08061,-87.579129,139,17.9,3315
+Ohio,Channel Catfish,LaDue Reservoir ,17077.7,41.39602,-81.19404,335,12,2181
+Arkansas,Channel Catfish,Lake Ouachita ,17236.5,34.590226,-93.343929,174,7.3,1433
+Minnesota,Channel Catfish,Mississippi River ,17236.5,45.076154,-93.282248,247,9.5,1762
+Iowa,Channel Catfish,Missouri River,17293.2,42.039604,-96.077926,320,9.2,1752
+Michigan,Channel Catfish,Houghton Lake ,18143.7,44.34527,-84.727662,347,7.8,1450
+Michigan,Channel Catfish,Houghton Lake ,18143.7,44.34527,-84.727662,347,14.3,2376
+Alabama,Channel Catfish,Inland Lake ,18143.7,33.843706,-86.516076,246,3.8,1210
+North Carolina,Channel Catfish,Fontana Reservoir ,18370.5,35.443659,-83.724666,508,8.9,1469
+Tennessee,Channel Catfish,Fall Creek Lake ,18597.3,35.651256,-85.369815,508,15.6,2863
+Nebraska,Channel Catfish,Merritt Lake ,18824.1,42.602499,-100.900192,904,6.5,954
+North Dakota,Channel Catfish,Moon Lake,19079.2,46.949568,-98.050809,426,2.5,1026
+Wisconsin,Channel Catfish,Wisconsin River ,19958,43.469612,-89.454655,237,17.4,3201
+Florida,Channel Catfish,Big Bluff Lake ,20184.8,28.596191,-81.870923,28,14.4,2498
+Georgia,Channel Catfish,Altamaha River ,20298.2,31.641825,-81.791982,8,18,3444
+Illinois,Channel Catfish,Baldwin Lake ,20525,38.21,-89.876667,131,11.3,1927
+Mississippi,Channel Catfish,Lake Tom Bailey ,23473.4,32.422517,-88.52148,86,7.2,1434
+South Carolina,Channel Catfish,Lake Moultrie ,26308.3,33.283618,-80.031136,23,7.5,1351
+Nevada,Common Carp,Lake Mohave ,13834.6,35.44882,-114.654918,239,15.8,2792
+North Dakota,Common Carp,Sheyenne River,14061.4,46.982225,-98.082139,371,21.2,4384
+Utah,Common Carp,Powell Lake ,14514.9,40.630457,-110.784512,3048,16.5,3046
+Rhode Island,Common Carp,Posnegansett Pond,14741.7,41.799847,-71.561005,136,15.1,2679
+Wyoming,Common Carp,Flaming Gorge Reservoir ,14770.1,40.999356,-109.569082,1844,9.6,1749
+New Hampshire,Common Carp,Connecticut River,15195.3,42.879694,-72.311172,142,8,1383
+Nebraska,Common Carp,"Private Pond, Gage County",15308.7,40.198904,-96.663812,391,11.9,1937
+Alabama,Common Carp,Bear Creek ,15875.7,34.713499,-87.754563,127,17.7,3258
+Louisiana,Common Carp,Bussy Brake,15875.7,32.867031,-91.924581,30,9.9,1753
+Oklahoma,Common Carp,Spavinaw Lake ,15875.7,36.399212,-95.010445,210,12.3,2219
+Colorado,Common Carp,Glenmere Park Lake ,16017.5,40.408,-104.70576,1453,9.5,1652
+Georgia,Common Carp,Lake Jackson ,16215.9,33.369251,-83.85658,161,9.9,1906
+Arizona,Common Carp,Bartlett Lake ,16782.9,33.832967,-111.635667,536,12.7,2400
+South Dakota,Common Carp,Waubay Lake ,16782.9,45.41614,-97.390131,546,12.6,2168
+Connecticut,Common Carp,Connecticut River ,17463.3,42.382145,-72.588821,34,17.6,3244
+Ontario,Common Carp,Lake Simcoe,18089.2,44.463555,-79.33529,220,12.3,2032
+Montana,Common Carp,Nelson Reservoir ,18234.4,48.496766,-107.546135,679,8,1383
+Washington,Common Carp,Long Lake ,18710.7,47.833,-117.647613,549,8.9,1548
+Texas,Common Carp,Town Lake,18824.1,30.247969,-97.717909,137,6.9,1557
+Vermont,Common Carp,Brattleboro Retreat Meadows,19259.5,42.861888,-72.561009,66,17.9,3382
+Tennessee,Common Carp,Boone Reservoir ,19277.7,36.388596,-82.347902,433,11.8,2115
+Indiana,Common Carp,Pine Lake ,19617.9,41.631378,-86.747923,243,4.3,1215
+Massachusetts,Common Carp,Connecticut River ,20014.7,42.351017,-72.588109,40,10.8,2033
+Delaware,Common Carp,Delaware River ,20411.6,39.755962,-75.472477,0,16.9,3067
+West Virginia,Common Carp,"Pond, Preston County",21318.8,39.437214,-79.65021,563,6.9,1297
+New Jersey,Common Carp,South Branch Raritan River ,21318.8,40.515357,-74.796541,29,10.3,1745
+Kansas,Common Carp,Carey Park,21364.2,38.019991,-97.923863,463,7.1,1197
+Maryland,Common Carp,Frederick County Farm Pond,21545.6,39.3844451,-77.470197,134,15.6,2708
+North Carolina,Common Carp,"Private Pond, Mecklenburg County",21772.4,35.263265,-80.854385,230,3.8,1210
+Virginia,Common Carp,Lake Prince ,22339.4,36.806955,-76.643437,8,11.2,1838
+Iowa,Common Carp,Glenwood Lake ,22679.6,41.045847,-95.734803,304,15.8,2891
+Ohio,Common Carp,Paint Creek ,22679.6,39.301325,-83.474497,250,4.6,970
+New York,Common Carp,Tomhannock Reservoir ,22793,42.839478,-73.538799,121,10.4,1754
+Missouri,Common Carp,Rothwell Park Lake ,22849.7,39.418743,-92.418743,247,10.2,1615
+Illinois,Common Carp,Lake Hillcrest ,23133.2,38.75089,-89.992131,153,6.2,1496
+Pennsylvania,Common Carp,Juniata River ,23586.8,40.608764,-77.430396,206,13,2149
+California,Common Carp,Nacimiento Lake ,23586.8,35.748722,-120.93313,287,20.3,3992
+Arkansas,Common Carp,Hamilton Lake ,24040.4,33.655044,-94.443615,93,6,1244
+Kentucky,Common Carp,South Fork Licking River ,24890.9,38.193108,-84.196614,241,7.8,1440
+Minnesota,Common Carp,Clearwater Lake ,25089.3,45.296189,-94.106717,306,14.8,2497
+Wisconsin,Common Carp,Lake Wisconsin ,25911.4,43.327883,-89.706295,243,8.4,1290
+Michigan,Common Carp,Big Wolf Lake ,27895.9,42.196465,-84.241356,286,10.1,1655
+Idaho,Common Carp,C.J. Strike Reservoir,30685.5,42.982673,-115.910617,844,7.9,1518
+Mississippi,Common Carp,Pelahatchie Lake ,33565.8,32.341551,-89.817569,117,7.5,1351
+North Dakota,Flathead Catfish,Heart River ,13324.3,47.209645,-104.509101,681,18.6,3503
+South Dakota,Flathead Catfish,James River,27442.3,44.594236,-98.24243,381,16.5,2988
+Mississippi,Flathead Catfish,Pickwick Lake ,29710.3,34.986951,-88.223592,124,12.2,2190
+West Virginia,Flathead Catfish,Little Kanawha River ,31751.4,38.914206,-81.087345,205,11.2,1925
+Minnesota,Flathead Catfish,Saint Croix River ,31751.4,44.893339,-92.7783,204,9.4,1786
+Wisconsin,Flathead Catfish,Mississippi River ,33710.4,43.557143,-91.237043,190,14.2,2613
+Oklahoma,Flathead Catfish,Poteau River,34473,35.100569,-94.599537,124,13.7,2344
+Ohio,Flathead Catfish,Clendening Lake ,34699.8,40.2417,-81.224677,282,7,1498
+Missouri,Flathead Catfish,Montrose Lake,35153.4,38.305597,-93.949589,230,15.9,2872
+Illinois,Flathead Catfish,Carlyle Lake ,35380.2,38.618939,-89.352856,134,12.9,2349
+New Mexico,Flathead Catfish,Elephant Butte Lake - Ash Canyon,35380.2,33.26173,-107.166177,1328,9.2,1787
+Indiana,Flathead Catfish,White River ,36060.6,38.817407,-86.497489,171,15.6,2882
+Alabama,Flathead Catfish,Alabama River near Selma,36287.4,32.397191,-87.036015,20,6.8,1569
+Arkansas,Flathead Catfish,Arkansas River ,36287.4,34.682032,-92.158747,72,10.1,1632
+Nebraska,Flathead Catfish,Loup Power Canal - near Genoa,36287.4,41.41981,-97.719507,471,16.2,2986
+Iowa,Flathead Catfish,Lake Ellis ,36741,41.009124,-93.262763,282,7.3,1632
+Tennessee,Flathead Catfish,Hiwassee River ,38980.6,35.223685,-84.531875,231,13.9,2419
+Kentucky,Flathead Catfish,Green River ,43998.4,37.177261,-85.194862,241,19,3656
+Texas,Flathead Catfish,Lake Palestine ,44678.8,32.175766,-95.437941,106,11.1,1948
+Kansas,Flathead Catfish,Elk City Reservoir ,55791.8,37.25703,-95.798472,244,8.2,1605
+Wyoming,Freshwater Drum,Glendo Reservoir ,5386.4,42.535393,-104.988539,1420,15.8,2792
+Colorado,Freshwater Drum,Lonetree Reservoir ,7796.1,40.34991,-105.118793,1563,17.4,3231
+Pennsylvania,Freshwater Drum,Monongahela River ,9015.1,40.24038,-79.949759,222,8.7,1495
+Manitoba,Freshwater Drum,Fairford River,9071.8,51.608174,-98.694193,249,12.9,2295
+Ontario,Freshwater Drum,French River,9241.9,46.036048,-80.550782,183,11.9,2095
+Montana,Freshwater Drum,"Fort Peck, Ghost Coulee",9793.1,48.022225,-106.435742,620,7.4,1584
+Ohio,Freshwater Drum,Sandusky River ,10659.4,41.39428,-83.10556,175,12.8,2236
+New York,Freshwater Drum,Ganargua Creek ,11084.7,43.06333,-77.00333,121,2,932
+Mississippi,Freshwater Drum,MP&L Lake - near Cleveland,11462.3,33.790415,-91.01371,46,8.3,1353
+Michigan,Freshwater Drum,Muskegon Lake ,11793.4,43.2324,-86.2945,177,7.5,1573
+North Dakota,Freshwater Drum,Lake Sakakawea ,11850.1,47.794504,-102.327159,567,16.5,2977
+West Virginia,Freshwater Drum,South Fork Hughes River ,12247,39.132316,-80.939578,241,13.9,2496
+Nebraska,Freshwater Drum,Missouri River - below Gavins Point dam,12814,42.860388,-97.480195,356,7,1525
+Indiana,Freshwater Drum,White River ,13607.8,38.661545,-86.799202,137,8.7,1772
+Texas,Freshwater Drum,Lake Texoma ,15739.6,33.89468,-96.674504,199,8.8,1460
+Illinois,Freshwater Drum,DuQuoin City Lake ,15875.7,37.993469,-89.229191,130,5.3,1352
+Minnesota,Freshwater Drum,Mississippi River - near Winona,15966.4,44.043698,-91.609247,201,9.4,1623
+Wisconsin,Freshwater Drum,Mississippi River ,15989.1,43.239013,-91.082357,188,15.7,2854
+South Dakota,Freshwater Drum,Missouri River ,16556.1,43.466521,-99.276059,459,4.5,1023
+Kentucky,Freshwater Drum,Green River ,17236.5,37.266956,-86.721024,122,11.6,1978
+Oklahoma,Freshwater Drum,Tenkiller Lake ,17236.5,35.656482,-94.994847,193,8.3,1710
+Missouri,Freshwater Drum,Lake of the Ozarks ,18370.5,38.100402,-92.76501,227,16.9,3139
+Alabama,Freshwater Drum,Wilson Reservoir ,18824.1,34.808325,-87.455443,158,11.5,1960
+Arkansas,Freshwater Drum,Lake Wilson Brake,20581.7,33.218731,-91.533454,38,8.7,1688
+Iowa,Freshwater Drum,Spirit Lake ,20865.2,43.467706,-95.101557,428,7.3,1400
+Tennessee,Goldeye,Cumberland River ,396.9,36.167047,-86.927052,147,0.5,752
+Ontario,Goldeye,Redstone River,481.9,45.146332,-78.489978,350,11.4,1989
+Wyoming,Goldeye,Powder River ,598.7,43.032186,-106.987278,1763,10.3,1922
+Missouri,Goldeye,Des Moines River ,652,40.385911,-91.484636,151,12.4,2314
+Illinois,Goldeye,Embarras River ,935.5,39.249013,-88.165545,183,12.6,2168
+Iowa,Goldeye,Des Moines River ,1020.6,41.375759,-91.428325,177,-0.5,772
+Kansas,Goldeye,Milford Reservoir ,1020.6,39.064456,-96.868417,332,7.9,1595
+Texas,Goldeye,Lake Texoma ,1048.9,33.89468,-96.674504,199,11.5,1956
+Kentucky,Goldeye,Kentucky River ,1088.6,38.02141,-84.847467,253,4.3,1215
+Oklahoma,Goldeye,Arkansas River ,1134,35.838477,-95.641856,166,8.7,1772
+Minnesota,Goldeye,Root River - near Hokah,1278.6,43.763922,-91.350514,199,4.3,1170
+West Virginia,Goldeye,Ohio River ,1360.8,40.142423,-80.718389,336,14.7,2715
+Montana,Goldeye,Nelson Reservoir ,1442.4,48.496766,-107.546135,679,4.8,1003
+Manitoba,Goldeye,Saskatchewan River,1587.6,53.133028,-99.288983,250,8.3,1701
+South Dakota,Goldeye,Missouri River - Lake Oahe Tailrace,1729.3,44.436135,-100.384937,434,13.5,2414
+North Dakota,Goldeye,New Johns Lake ,1729.3,47.317479,-100.647598,561,16.9,3139
+Nebraska,Goldeye,Lewis & Clark Lake ,1800.2,42.847414,-97.709085,368,10.8,1787
+Alberta,Goldeye,North Saskatchewan River,1871.1,52.156111,-117.181667,2152,7.2,1393
+Ohio,Green Sunfish,Farm Pond,449.1,40.417287,-82.907123,295,15.2,2752
+Texas,Green Sunfish,Tehuacana Creek ,553.4,31.529644,-97.030087,108,15.6,2880
+Tennessee,Green Sunfish,North Cross Creek ,567,36.399497,-87.770855,136,11.7,2102
+Mississippi,Green Sunfish,Waltman's (Canton) Lake ,571.5,32.606155,-89.990628,82,11.2,1990
+Minnesota,Green Sunfish,North Arbor Lake,589.7,45.099668,-93.438597,295,10,1876
+South Dakota,Green Sunfish,Minnehaha Co. Stock Pond,595.3,43.58932,-97.079869,489,12.5,2270
+Kentucky,Green Sunfish,"Private Pond, Marion County",595.3,37.593537,-85.240966,243,12.6,2204
+Nebraska,Green Sunfish,"Cuming County, sandpit",680.4,41.954015,-96.8351,422,9,1586
+Michigan,Green Sunfish,Kirkwood Lake ,694,42.553345,-83.312291,271,6.9,1509
+Alabama,Green Sunfish,McLamore Pond,708.7,33.960668,-87.3231,176,17.6,3294
+Wisconsin,Green Sunfish,Wind Lake ,708.7,42.820774,-88.144373,232,12.4,2271
+Indiana,Green Sunfish,"Private Pond, Fountain County",737.1,39.959032,-87.205251,198,8.9,1799
+Arkansas,Green Sunfish,Dierks Pond ,765.4,34.129122,-94.000024,141,9.9,1673
+Iowa,Green Sunfish,Private Pond near Knoxville,935.5,41.320343,-93.09967,277,15.8,2866
+Illinois,Green Sunfish,"Private Pond, Fayette County",935.5,39.066957,-89.017,933,7.2,1625
+Missouri,Green Sunfish,Stockton Lake ,963.9,37.596572,-93.707974,271,13.9,2432
+Kansas,Green Sunfish,Private Pond near Russell,1070.5,38.895289,-98.859806,560,19.2,3776
+Oklahoma,Green Sunfish,"Private Pond, Pontotoc County",1105.6,34.768504,-96.663812,290,7.8,1463
+Ohio,Lake Trout,Lake Erie ,9294.1,41.471018,-82.464174,162,-4.8,387
+Pennsylvania,Lake Trout,Lake Erie ,12615.5,42.154224,-80.250338,156,1.4,754
+New Hampshire,Lake Trout,Newfound Lake ,12927.4,43.66083,-71.770885,179,9.4,1672
+Indiana,Lake Trout,Lake Michigan ,13267.6,41.65238,-87.15544,168,10.3,1786
+Maine,Lake Trout,Beech Hill Pond,14288.1,44.686635,-68.451857,60,6.9,1121
+Vermont,Lake Trout,Willoughby Lake ,15422.1,44.760692,-72.063632,357,-3,586
+Illinois,Lake Trout,Lake Michigan ,17349.9,42.074725,-87.592749,162,5.3,902
+New York,Lake Trout,Lake Erie ,18824.1,42.747789,-78.998409,161,2.7,835
+Minnesota,Lake Trout,Lake Superior - near Hovland,19731.3,47.919788,-89.627429,12,5.7,1126
+Alaska,Lake Trout,Clarence Lake ,21318.8,62.677748,-147.810979,874,8.2,1280
+Wisconsin,Lake Trout,Superior Lake ,21318.8,42.267051,-90.648852,113,10.2,1667
+Alberta,Lake Trout,Cold Lake,23756.9,54.464317,-110.173147,557,0.7,615
+Michigan,Lake Trout,Lake Superior ,27895.9,48.012372,-87.979931,0,9.5,1484
+Ontario,Lake Trout,Lake Superior,28630.7,48.869007,-74.6802,135,-3.3,525
+Manitoba,Lake Trout,Gods Lake,29483.5,54.721387,-94.283799,180,3.8,1005
+Saskatchewan,Lake Trout,Lake Athabasca,31751.4,59.424223,-109.340355,280,8,1529
+Minnesota ,Largemouth Bass,Tetonka Lake  ,3990.2,44.226891,-93.598989,320,16.5,2954
+West Virginia ,Largemouth Bass,Dog Run Lake  ,4363.6,39.30075,-80.55999,320,15.6,2807
+Iowa ,Largemouth Bass,Lake Fisher  ,4932.8,40.756629,-92.441256,260,22.4,4558
+Pennsylvania ,Largemouth Bass,Birch Run Reservoir  ,5074.6,39.920908,-77.456569,480,18.1,3446
+Wisconsin ,Largemouth Bass,Ripley Lake  ,5074.6,45.712254,-91.852652,340,8.4,1541
+New York ,Largemouth Bass,Buckhorn Lake  ,5102.9,43.418885,-74.478207,680,9.5,1700
+Michigan ,Largemouth Bass,Bamfield Dam  ,5415.9,44.568539,-83.633477,300,10.6,1953
+Michigan ,Largemouth Bass,Big Pine Island Lake  ,5415.9,43.10182,-85.36917,240,13.9,2491
+Illinois ,Largemouth Bass,Stone Quarry Lake  ,5925,42.183815,-87.929968,200,12.8,2142
+Ohio ,Largemouth Bass,Private Pond,5955.7,40.417286,-82.907121,300,18.3,3448
+Kentucky ,Largemouth Bass,Wood Creek Lake  ,6191.5,37.20443,-84.189666,320,6.8,1269
+Missouri ,Largemouth Bass,Bull Shoals Lake  ,6293.6,36.499047,-92.77059,240,8.2,1483
+Tennessee ,Largemouth Bass,Browns Creek Lake,6577.1,35.732025,-88.291728,140,6.2,1414
+Oklahoma ,Largemouth Bass,Broken Bow Lake  ,6676.3,34.180517,-94.691548,220,18.5,3465
+Indiana ,Largemouth Bass,Private Pond,6690.5,40.267194,-86.134902,260,14.7,2683
+Kansas ,Largemouth Bass,Private Pit Lake ,7257.5,37.169431,-94.838136,260,4.4,893
+South Carolina ,Largemouth Bass,Lake Marion  ,7314.2,33.53052,-80.468081,40,9.9,1673
+South Carolina ,Largemouth Bass,Private Pond,7314.2,33.836081,-81.163724,100,16.1,2991
+Arkansas ,Largemouth Bass,Mallard Lake  ,7370.9,35.878392,-90.0922,60,10.7,1777
+Alabama ,Largemouth Bass,Mountain View Lake  ,7484.3,33.468953,-86.536596,220,17,3164
+Louisiana ,Largemouth Bass,Caddo Lake,7739.4,32.710432,-94.018466,60,18.1,3379
+Florida ,Largemouth Bass,unknown  ,7824.5,27.664827,-81.515754,20,14.8,2636
+Mississippi ,Largemouth Bass,Natchez State Park Lake  ,8232.7,31.592969,-91.210857,60,17.4,3275
+Texas ,Largemouth Bass,Lake Fork  ,8246.3,32.813544,-95.574264,120,9.9,1730
+Georgia ,Largemouth Bass,Montgomery Lake  ,10092.4,31.829089,-82.812471,60,4.9,1212
+Ontario,Longnose Gar,Ottawa River,5925,45.450667,-76.307957,144,16.7,3007
+New York,Longnose Gar,Lake Champlain ,5981.7,44.586581,-73.38009,88,17.2,3177
+North Carolina,Longnose Gar,Intracoastal Waterway,6974,36.681286,-76.347901,4,21.5,4293
+South Dakota,Longnose Gar,Missouri River ,7597.7,44.185696,-99.689832,508,18.2,3404
+Minnesota,Longnose Gar,Saint Croix River - Prescott,7597.7,44.745508,-92.804003,206,12.9,2288
+Iowa,Longnose Gar,Mississippi River ,7937.9,43.041119,-91.164526,188,8.4,1660
+Michigan,Longnose Gar,Williamsville Lake ,8164.7,42.438207,-84.104586,276,12.5,2305
+West Virginia,Longnose Gar,Kanawha River ,8654.5,38.48028,-81.668489,254,13.7,2429
+Nebraska,Longnose Gar,Wagners Lake ,9270.3,41.419974,-97.382046,440,8.9,1548
+Indiana,Longnose Gar,East Fork White River,9979,38.530377,-87.262662,150,7,1498
+Tennessee,Longnose Gar,Kentucky Reservoir ,10432.6,36.201975,-87.946354,116,16.5,3018
+Ohio,Longnose Gar,Ohio River ,11339.8,38.681194,-83.613168,153,14.7,2683
+Missouri,Longnose Gar,Bull Shoals Lake ,12247,36.499025,-92.770514,220,9.9,1929
+Georgia,Longnose Gar,Alapaha River,13721.2,31.834005,-83.482222,93,6.6,1173
+Kansas,Longnose Gar,Perry Reservoir reservoir outlet,14288.1,39.110885,-95.421286,260,14.8,2497
+Alabama,Longnose Gar,Jordan Reservoir ,14911.8,32.661558,-86.319928,80,11.8,2059
+Arkansas,Longnose Gar,Taylor Old River Lake,16215.9,34.062394,-91.466431,49,17.4,3239
+Mississippi,Longnose Gar,Grenada Lake Spillway,18143.7,33.809582,-89.772507,55,5.9,1135
+Kentucky,Longnose Gar,Ohio River ,18143.7,37.09136,-88.601706,103,7.1,1676
+Florida,Longnose Gar,Lake Panasoffkee ,18597.3,28.790161,-82.130091,13,13.7,2439
+Oklahoma,Longnose Gar,Red River ,18597.3,33.719695,-97.125905,196,20.2,3923
+Texas,Longnose Gar,Trinity River ,22821.3,29.889251,-94.751979,2,12.7,2131
+North Carolina,Northern Pike,Lake James ,5358.1,35.7479,-81.87861,365,-2.3,395
+Missouri,Northern Pike,Stockton Lake ,8419.8,37.596572,-93.707974,294,5.5,1019
+Ohio,Northern Pike,Lyre Lake ,10151.4,39.886941,-84.01639,256,9.2,1657
+New Hampshire,Northern Pike,Connecticut River ,10478,42.78433,-72.401386,185,8.5,1461
+Tennessee,Northern Pike,South Holston Reservoir ,11098.8,36.476696,-82.253501,457,7.4,1584
+Maryland,Northern Pike,Deep Creek Lake ,11226.4,39.511682,-79.315572,751,8,1258
+Iowa,Northern Pike,West Okoboji Lake ,11481.5,43.382068,-95.158846,427,8.1,1411
+Illinois,Northern Pike,strip mine lake ,12218.6,41.179098,-87.776333,198,7.2,1356
+Wyoming,Northern Pike,Keyhole Reservoir ,12360.4,44.358898,-104.851746,1247,3.4,997
+Nebraska,Northern Pike,Terrys Pit ,13636.1,41.845701,-103.66581,1182,12.4,2271
+Indiana,Northern Pike,Clear Lake ,13664.5,41.73755,-84.833292,317,6.6,1393
+Vermont,Northern Pike,Glen Lake ,13834.6,43.663802,-73.237464,146,9.1,1711
+New Jersey,Northern Pike,Pompton Lake,13848.7,41.002506,-74.278086,57,7.8,1440
+Pennsylvania,Northern Pike,Allegheny Reservoir ,15875.7,41.974419,-78.93731,443,9.1,1461
+Massachusetts,Northern Pike,South Pond,15875.7,42.218969,-72.10825,28,4.4,893
+South Dakota,Northern Pike,Lake Oahe ,16414.4,44.826767,-100.682062,618,13.9,2294
+North Dakota,Northern Pike,Lake Sakakawea ,17009.7,47.794504,-102.327159,567,5.3,1352
+Montana,Northern Pike,Tongue River Reservoir ,17009.7,45.087282,-106.798145,1046,10.9,1830
+Alaska,Northern Pike,Innoko River ,17236.5,62.348604,-159.944089,26,2.5,962
+Alberta,Northern Pike,Keho Lake,17236.5,49.951556,-113.004103,961,6.1,1083
+Wisconsin,Northern Pike,Puckaway Lake ,17236.5,43.75452,-89.194402,234,-3.3,525
+Michigan,Northern Pike,Dodge Lake ,17690.1,44.020855,-84.712616,310,7.8,1739
+Ontario,Northern Pike,Delaney River near Kenora,19079.2,49.775474,-94.54177,324,13,2149
+Saskatchewan,Northern Pike,Lake Athabasca,19391.1,59.424223,-109.340355,280,8.4,1547
+Minnesota,Northern Pike,Basswood Lake ,20751.8,48.096226,-91.622591,397,6.7,1393
+New York,Northern Pike,Sacandaga Lake ,20921.9,43.483592,-74.423251,526,7.2,1412
+Alabama,Rock Bass,Paint Rock River ,623.7,34.476202,-86.467766,170,16.2,2917
+New Hampshire,Rock Bass,Island Pond ,680.4,42.869637,-71.214658,62,9.3,1748
+Iowa,Rock Bass,Mississippi River ,680.4,42.554752,-90.672637,188,11.2,1990
+Illinois,Rock Bass,Aux Sable Creek ,737.1,41.391561,-88.478788,168,9.5,1790
+Kentucky,Rock Bass,Casey Creek ,737.1,37.27229,-85.157458,227,13.7,2344
+West Virginia,Rock Bass,Big Sandy Creek ,793.8,39.256625,-79.692127,583,2.5,1014
+New York,Rock Bass,Ramapo River ,878.8,41.10764,-74.21011,261,8.4,1487
+Ohio,Rock Bass,Deer Creek near London,893.6,39.865597,-83.419631,307,4.2,1349
+Vermont,Rock Bass,Lake Champlain ,907.2,44.586581,-73.38009,88,12.1,2142
+Minnesota,Rock Bass,Lake Osakis ,907.2,45.894107,-95.121817,404,9.3,1563
+South Dakota,Rock Bass,Lewis & Clark Lake ,907.2,42.8622252,-97.478998,419,9.9,1644
+Virginia,Rock Bass,Laurel Bed Lake ,963.9,36.961893,-81.801939,1080,9.8,1687
+Tennessee,Rock Bass,Stones River ,1134,35.959104,-86.395581,157,3.7,1003
+Missouri,Rock Bass,Big Piney River ,1247.4,37.67721,-92.059506,246,9.5,1484
+Wisconsin,Rock Bass,Shadow Lake ,1332.4,44.345447,-89.087777,253,8.7,1772
+Indiana,Rock Bass,Sugar Creek ,1360.8,39.891647,-87.203176,202,14.3,2481
+Ontario,Rock Bass,York River,1360.8,45.096079,-77.882743,340,6.6,1173
+Manitoba,Rock Bass,Winnipeg River,1400,50.349017,-95.993025,250,11.5,1876
+Pennsylvania,Rock Bass,Elk Creek ,1417.5,41.978011,-80.262771,232,10.1,1655
+Michigan,Rock Bass,Holoway Reservoir ,1642,43.116331,-83.461688,233,6.8,1404
+Mississippi,Sauger,Mississippi River ,1143.1,34.350696,-90.759559,40,15.8,2792
+Virginia,Sauger,Clinch River,1247.4,36.751422,-82.62134,560,6.2,1210
+Pennsylvania,Sauger,Susquehanna River,1814.4,41.95538,-77.173689,440,15.8,2913
+Georgia,Sauger,Clarks Hill Reservoir ,1899.4,33.660961,-82.198886,100,16.7,3063
+Ontario,Sauger,Detroit River Near Windsor,1927.8,42.291248,-83.095409,180,8.4,1633
+South Carolina,Sauger,Lake Thurmond ,2012.8,33.660961,-82.198886,100,9.9,1763
+New York,Sauger,Lower Niagara River ,2041.2,43.006191,-78.92497,160,9.1,1818
+West Virginia,Sauger,Ohio River ,2154.6,39.15814,-81.740272,220,13,2395
+Kansas,Sauger,Melvern Reservoir ,2177.2,38.505888,-95.739167,320,12.8,2161
+Missouri,Sauger,Osage River ,2296.3,38.404664,-92.239724,220,7,1258
+Alabama,Sauger,Wilson Dam Tailwater ,2324.7,34.7977781,-87.625579,180,6.8,1485
+Oklahoma,Sauger,Kerr Reservoir ,2409.7,35.356174,-94.864464,140,6.8,1485
+Illinois,Sauger,Mississippi River ,2622.3,42.308961,-90.422123,200,16.6,2975
+Wisconsin,Sauger,Lake Wisconsin ,2636.5,43.327883,-89.706295,280,12.4,2250
+Indiana,Sauger,Tippecanoe River ,2749.9,40.609,-86.374965,200,7,1525
+Alberta,Sauger,Milk River,2795.3,49.13629,-112.064691,1020,9.4,1878
+Minnesota,Sauger,Mississippi River - near Red Wing,2799.5,44.562046,-92.419114,280,8.2,1280
+Iowa,Sauger,Missouri River ,2948.3,42.410834,-96.412403,340,5.3,1352
+Michigan,Sauger,Torch Lake ,2975.6,44.929213,-85.302839,180,9.6,1662
+Arkansas,Sauger,Arkansas River ,3061.7,35.379098,-94.461373,220,16.2,2978
+Wyoming,Sauger,Boysen Reservoir,3175.1,43.375317,-108.178446,1900,9.4,1614
+Ohio,Sauger,Maumee River ,3315.8,41.410766,-84.016684,200,7.7,1324
+Tennessee,Sauger,Kentucky Reservoir ,3345.2,36.412055,-88.061881,140,2.2,945
+Kentucky,Sauger,Lake Cumberland ,3373.6,36.888847,-85.049325,280,16.7,3063
+South Dakota,Sauger,Missouri River - Oahe Tailwaters,3373.6,44.443205,-100.391904,500,8.3,1701
+Saskatchewan,Sauger,S.Saskatchewan River,3543.7,51.973949,-106.77273,480,13.9,2432
+Nebraska,Sauger,Missouri River - near Niobrara,3770.5,42.765463,-98.013677,400,11.5,1761
+North Dakota,Sauger,Lake Sakakawea ,3968.9,47.794504,-102.327159,560,12,2035
+Montana,Sauger,Fort Peck Reservoir ,3991.6,47.852547,-106.491251,680,7.9,1518
+Minnesota,Sauger,Mississippi River - near Red Wing,4462.2,44.562046,-92.419114,280,8.5,1727
+Illinois,Smallmouth Bass,strip mine lake ,2920,40.553182,-90.224466,180,15.8,2792
+South Dakota,Smallmouth Bass,Lake Poinsett,2976.7,44.541263,-97.043208,500,14.7,2683
+Vermont,Smallmouth Bass,Lake Champlain ,3061.7,44.586581,-73.38009,40,12.5,2051
+Georgia,Smallmouth Bass,Lake Chatuge ,3231.8,34.991095,-83.782528,600,10.9,2017
+Missouri,Smallmouth Bass,Stockton Lake ,3231.8,37.59637,-93.707787,260,11.7,2075
+Indiana,Smallmouth Bass,Twin Lake ,3288.5,38.97693,-87.261755,160,7.4,1584
+Arkansas,Smallmouth Bass,Bull Shoals Lake ,3316.9,36.499025,-92.770514,240,12.8,2142
+Iowa,Smallmouth Bass,West Okoboji Lake ,3515.3,43.382068,-95.158846,440,5.7,1022
+Mississippi,Smallmouth Bass,Pickwick Lake - Yellow Creek Arm,3600.4,34.836913,-88.123061,160,5.3,1373
+Minnesota,Smallmouth Bass,West Battle Lake ,3628.7,46.288884,-95.679335,400,15.8,2810
+Virginia,Smallmouth Bass,New River,3657.1,37.193336,-80.59525,600,12.4,2271
+Oklahoma,Smallmouth Bass,Lake Eufaula,3713.8,35.064905,-95.673614,200,8.4,1331
+New York,Smallmouth Bass,Lake Erie ,3742.1,42.551676,-79.292552,160,13.1,2245
+Kentucky,Smallmouth Bass,Laurel River Lake ,3837.4,36.960047,-84.221293,320,9.6,1637
+Wisconsin,Smallmouth Bass,Indian Lake ,4110.7,45.81517,-89.301873,480,16.6,2907
+Michigan,Smallmouth Bass,Long Lake ,4195.7,45.533279,-84.397342,180,10.3,1457
+South Carolina,Smallmouth Bass,Lake Jocassee ,4280.8,34.981285,-82.923263,620,5.7,1465
+Ohio,Smallmouth Bass,Lake Erie ,4309.1,41.628769,-82.928558,160,13.3,2360
+West Virginia,Smallmouth Bass,South Branch ,4422.5,38.647887,-79.320906,820,6.6,1173
+North Carolina,Smallmouth Bass,Hiwassee Reservoir ,4535.9,35.156194,-84.162638,640,11.7,1874
+Alabama,Smallmouth Bass,Wheeler Dam Tailwater ,4762.7,34.7998314,-87.381538,200,10.7,1714
+Tennessee,Smallmouth Bass,Dale Hollow Reservoir ,5414.8,36.589244,-85.28518,220,3.8,1010
+Virginia,Spotted Bass,Claytor Lake ,1644.3,37.056003,-80.613265,587,15,2630
+Florida,Spotted Bass,Apalachicola River ,1701,30.286584,-85.06903,8,14.7,2683
+Kansas,Spotted Bass,Marion County Lake,2012.8,38.318735,-96.991746,409,19.9,3849
+West Virginia,Spotted Bass,RD Bailey Lake ,2163.6,37.603053,-81.815049,318,13.7,2299
+Louisiana,Spotted Bass,Tickfaw River,2213.5,30.472045,-90.555613,5,11.8,1997
+Ohio,Spotted Bass,Lake White ,2381.4,39.102696,-83.018682,172,13.3,2492
+Indiana,Spotted Bass,Pond,2409.7,39.286121,-87.537315,140,13.3,2293
+Tennessee,Spotted Bass,Center Hill Reservoir ,2494.8,35.995437,-85.716658,261,18.9,3604
+Texas,Spotted Bass,Lake O The Pines ,2522,32.796839,-94.619211,75,17,3135
+North Carolina,Spotted Bass,Lake Norman,2863.3,35.505061,-80.923539,231,12.7,2277
+Missouri,Spotted Bass,Table Rock Lake ,3401.9,36.65144,-93.538262,279,15.2,2726
+Kentucky,Spotted Bass,Nelson County,3458.6,37.764746,-85.478806,203,11.3,1992
+Arkansas,Spotted Bass,Bull Shoals Lake ,3600.4,36.499025,-92.770514,220,16.6,2907
+Georgia,Spotted Bass,Lake Burton,3685.4,34.831075,-83.553652,574,10.3,1457
+South Carolina,Spotted Bass,Lake Jocassee ,3685.4,34.978786,-82.930739,336,13.8,2366
+Mississippi,Spotted Bass,Private Pond,3685.4,32.46778,-89.486097,123,19.2,3720
+Oklahoma,Spotted Bass,"Private Pond, Pittsburg County",3685.4,34.987928,-95.814288,206,11,1790
+Alabama,Spotted Bass,Lewis Smith Reservoir ,4054,34.047773,-87.024944,174,10.5,1707
+Mississippi,Stripped Bass,Bowie River ,17154.8,38.939419,-76.691348,6,16.8,3032
+Florida,Stripped Bass,Apalachicola River ,19164.3,29.833497,-85.024949,1,10.5,1659
+Maryland,Stripped Bass,Liberty Reservoir,21375.5,39.392104,-76.878195,141,12.4,2039
+Louisiana,Stripped Bass,Toledo Bend,21687.4,31.171161,-93.560142,35,19.9,3758
+New Jersey,Stripped Bass,Delaware River ,23133.2,39.620174,-75.585889,0,18.1,3446
+Delaware,Stripped Bass,Indian River Inlet,23360,38.578695,-75.188064,0,18.4,3499
+Texas,Stripped Bass,Brazos River ,24040.4,30.479047,-97.483374,165,11.8,1973
+Virginia,Stripped Bass,Leesville Reservoir ,24238.8,37.079463,-79.401457,213,11.9,2029
+Pennsylvania,Stripped Bass,Delaware River ,24408.9,39.858398,-75.331299,3,8.1,1323
+Alabama,Stripped Bass,Tallapoosa River ,24947.6,32.513619,-85.892088,69,11.6,1881
+New Hampshire,Stripped Bass,Atlantic Ocean - Great Bay,27215.5,43.059631,-70.850644,0,12.3,2056
+Georgia,Stripped Bass,Oconee River ,28576.3,31.983647,-82.556733,26,12.5,2015
+Rhode Island,Stripped Bass,Rhode Island Coast,31751.4,41.528541,-71.11356,23,12.4,2083
+Connecticut,Stripped Bass,Atlantic Ocean - New Haven Harbor,34189.5,41.27343,-72.917602,0,11.1,1697
+New York,Stripped Bass,Atlantic Ocean ,34473,40.592242,-74.038824,0,19.1,3732
+New Jersey,Stripped Bass,Atlantic Ocean - Atlantic City,35607,39.364283,-74.422927,0,12.6,2164
+Mississippi,Walleye,Tennessee River ,4381.7,34.962648,-88.175857,126,16.8,3032
+South Carolina,Walleye,Richard B. Russell Lake ,4535.9,34.129324,-82.675347,156,1.1,743
+Alabama,Walleye,Weiss Reservoir ,4932.8,32.356005,-85.94738,81,14.7,2644
+Georgia,Walleye,Richard B. Russell Lake ,5159.6,34.129324,-82.675347,156,16.5,3020
+Oklahoma,Walleye,Robert S Kerr,5811.6,35.367999,-94.903942,144,9.2,1657
+Kansas,Walleye,Wilson Reservoir ,5969.3,38.94256,-98.51169,482,9.4,1679
+Vermont,Walleye,Clyde River ,6096.3,44.882221,-72.052559,358,9.2,1657
+North Carolina,Walleye,Lake Chatuge ,6123.5,34.996412,-83.789352,588,9.9,1909
+Illinois,Walleye,Kankakee River ,6350.3,41.110374,-87.760704,185,12.5,2270
+Indiana,Walleye,Little Kankakee River ,6463.7,41.185708,-87.329178,195,12.8,2161
+Indiana,Walleye,Tippecanoe River ,6463.7,41.009381,-86.611032,211,8.5,1396
+Iowa,Walleye,Des Moines River ,6577.1,41.548792,-93.480277,263,4,687
+South Dakota,Walleye,Lake Sharpe ,6888.9,44.247757,-99.896228,501,15.9,2872
+Alberta,Walleye,Pembina River,7030.7,53.469042,-115.010231,771,14.7,2683
+North Dakota,Walleye,Wood Lake ,7144.1,47.880509,-98.820745,487,7,1525
+Virginia,Walleye,New River ,7229.1,37.13232,-80.590249,571,9.3,1798
+Nebraska,Walleye,Lake McConaughy ,7314.2,41.344201,-102.462844,1138,6.9,1149
+Ohio,Walleye,Lake Erie ,7343.7,41.755947,-82.966211,165,12.5,2051
+New York,Walleye,Mystic Lake,7512.6,42.338848,-78.671064,606,3.9,1167
+Montana,Walleye,Fort Peck Reservoir ,7543.2,47.852547,-106.491143,768,9.6,1637
+West Virginia,Walleye,Kanawha River,7734.3,38.48028,-81.668489,254,16.2,2978
+Michigan,Walleye,Pine River ,7797.2,44.298898,-85.859341,215,8.2,1280
+Minnesota,Walleye,Seagull River ,7937.9,48.054209,-90.310113,497,8.5,1426
+Pennsylvania,Walleye,Allegheny River ,7966.2,40.901176,-79.475278,287,0.7,831
+Wisconsin,Walleye,High Lake ,8164.7,46.153286,-89.548434,500,16.5,3020
+Saskatchewan,Walleye,Tobin Lake,8193,53.51849,-103.744022,333,7,1696
+Missouri,Walleye,Bull Shoals Lake ,9553.8,36.499025,-92.770514,220,6.1,1185
+Kentucky,Walleye,Lake Cumberland ,9752.2,36.888847,-85.049325,262,11,1790
+Arkansas,Walleye,Greers Ferry Lake ,10290.9,35.519862,-92.120477,189,12.7,2131
+Ontario,Walleye,"Niagra River, Fort Erie",10687.8,43.008949,-78.893272,180,3.9,979
+Ohio,Warmouth,Mahoning County Farm Pond,453.6,40.983479,-80.695895,308,18.3,3467
+Wisconsin,Warmouth,Eagle Lake ,481.9,42.706962,-88.128142,244,18.8,3592
+Kansas,Warmouth,Mined Land WA #7 ,503.5,37.410884,-94.70496,285,18.3,3427
+Indiana,Warmouth,"North Dugger Pit, Sullivan County",567,39.084312,-87.420752,155,11.3,2003
+Missouri,Warmouth,Private Pond,567,36.399228,-90.023704,81,12.4,2214
+Texas,Warmouth,Town Lake ,589.7,30.247969,-97.717909,137,13.6,2508
+Michigan,Warmouth,Great Bear Lake ,626,42.371934,-85.99302,206,20.2,3903
+Arkansas,Warmouth,Black Bayou ,680.4,31.223231,-85.390489,89,8.4,1449
+Mississippi,Warmouth,Black Creek ,680.4,31.052553,-89.170744,40,18.7,3574
+Tennessee,Warmouth,Nolichucky River ,793.8,36.085692,-82.42401,522,14.6,2659
+North Carolina,Warmouth,McLeods Pond ,822.1,35.045228,-79.577409,114,15.8,2906
+Illinois,Warmouth,Private Pond,822.1,39.265353,-88.20716,172,9.2,1545
+Georgia,Warmouth,Private Pond,907.2,32.157435,-82.907123,86,17,3195
+South Carolina,Warmouth,"Private Pond, Clarendon County",978.1,33.673424,-80.187506,38,12,1989
+Louisiana,Warmouth,Atchafalaya River,992.2,29.748748,-91.202521,1,20.3,3992
+Florida,Warmouth,Yellow River ,1105.6,30.719748,-86.623686,36,7.8,1463
+Pennsylvania,White Bass,Conneaut Lake ,1757.7,41.621329,-80.301811,320,16.4,2995
+Iowa,White Bass,West Okoboji Lake ,1757.7,43.382068,-95.158846,440,14.7,2683
+Louisiana,White Bass,Bayou Dorcheat,1814.4,32.565586,-93.322304,40,12.9,2278
+Ohio,White Bass,gravel pit,1814.4,39.185073,-84.50351,240,10.3,1807
+Minnesota,White Bass,Mississippi River Pool 5,1814.4,44.219143,-91.903477,200,7.4,1584
+Indiana,White Bass,Lake Freeman ,1899.4,40.8088,-86.7919,200,12.4,2320
+South Dakota,White Bass,Blue Dog Lake ,1984.5,45.351915,-97.298829,540,13.6,2320
+Wisconsin,White Bass,Okauchee Lake ,1984.5,43.123704,-88.420657,260,14,2450
+West Virginia,White Bass,New River ,2068.4,37.643997,-80.886178,780,17.7,3351
+Alabama,White Bass,Warrior River ,2069.5,33.599972,-87.229428,120,7.3,1529
+Illinois,White Bass,Kaskaskia River ,2211.3,38.489748,-89.446366,120,16.5,3018
+Nebraska,White Bass,Gavins Point tailwaters ,2268,42.848935,-97.436632,380,12.7,2277
+Kentucky,White Bass,Herrington Lake ,2268,37.754372,-84.703471,240,8.7,1772
+Kentucky,White Bass,Kentucky Lake ,2268,36.886439,-88.177918,100,13,2234
+Tennessee,White Bass,Parksville Reservoir ,2324.7,35.095451,-84.6439989,240,12.4,2110
+Arkansas,White Bass,Bull Shoals Lake ,2381.4,36.499025,-92.770514,240,16.6,2907
+Oklahoma,White Bass,Lake Eufaula ,2381.4,35.035037,-95.630023,200,8.1,1349
+Mississippi,White Bass,Grenada Reservoir - spillway,2438.1,33.843451,-89.720339,80,6.2,1496
+Missouri,White Bass,Table Rock Lake ,2438.1,36.65144,-93.538262,320,14.2,2456
+Texas,White Bass,Colorado River ,2522,30.184897,-97.474339,120,20.3,4004
+Kansas,White Bass,Rvr. above John Redmond,2571.9,38.303018,-95.944446,340,11.4,1902
+North Carolina,White Bass,Kerr Reservoir ,2664.9,36.128401,-81.241778,460,7.3,1433
+Kentucky,Yellow Perch,Kentucky Lake ,474,36.886439,-88.177918,100,15.8,2792
+Kansas,Yellow Perch,Private Pond,481.9,38.202819,-95.811891,340,-0.5,791
+Maine,Yellow Perch,Worthley Pond,737.1,44.460224,-70.400699,200,4.7,1001
+Missouri,Yellow Perch,Bull Shoals,765.4,36.510209,-92.613783,220,8.5,1462
+West Virginia,Yellow Perch,Tygart Lake,830.1,39.267796,-80.002113,360,12.3,2056
+Tennessee,Yellow Perch,Hiwassee River ,878.8,35.173476,-84.315284,460,13.7,2299
+Tennessee,Yellow Perch,Melton Hill Reservoir ,878.8,35.986466,-84.193617,280,9.4,1717
+Alabama,Yellow Perch,Wheeler Reservoir ,878.8,34.783496,-87.326459,160,11.8,1997
+Vermont,Yellow Perch,Lake Champlain ,963.9,44.586581,-73.38009,40,7.3,1562
+Iowa,Yellow Perch,Morse Lake ,992.2,42.839688,-93.694021,380,12.4,2320
+Wyoming,Yellow Perch,Mayland Pond ,997.9,44.399771,-108.934664,1600,14,2450
+Rhode Island,Yellow Perch,Rhode Island Coast,1020.6,41.580094,-71.477429,80,6.2,1173
+Montana,Yellow Perch,Ashley Lake ,1075,48.193962,-114.634941,1580,1.4,880
+New Hampshire,Yellow Perch,Heads Pond ,1077.3,43.101718,-71.4381,100,8,1258
+New Jersey,Yellow Perch,Holiday Lake ,1077.3,39.73714,-74.264211,20,11.1,1697
+Manitoba,Yellow Perch,Lake of the Prairies,1077.3,51.237396,-101.528336,460,5.5,879
+Maryland,Yellow Perch,Deep Creek Lake ,1098.5,39.511682,-79.315572,760,3.1,1058
+Ontario,Yellow Perch,Lake Saint Clair,1111.3,42.649299,-82.697952,180,14.7,2683
+Saskatchewan,Yellow Perch,Pagan Lake,1117,54.321013,-108.28161,480,5.7,1031
+Georgia,Yellow Perch,Lake Burton ,1134,34.830449,-83.554061,860,9.5,1762
+Indiana,Yellow Perch,"Gravel Pit, Vigo County",1134,39.416538,-87.420752,140,7.4,1381
+Illinois,Yellow Perch,Arrowhead Club Lake ,1155.2,40.928024,-89.6025,220,11.6,1890
+Pennsylvania,Yellow Perch,Hunters Lake ,1162.3,41.384641,-76.621776,500,8.2,1280
+North Carolina,Yellow Perch,Indiantown Creek ,1162.3,36.35849,-76.0454824,0,15.7,2673
+Colorado,Yellow Perch,Seaman Reservoir,1162.3,41.163241,-105.477404,2280,3.9,1167
+Nebraska,Yellow Perch,Hackberry Lake ,1211.9,42.559302,-100.666118,880,9.6,1637
+Delaware,Yellow Perch,Red Clay Creek ,1219,39.700318,-75.623623,20,8.7,1432
+South Dakota,Yellow Perch,Bitter Lake,1247.4,45.280823,-97.320062,540,9.9,1626
+Ohio,Yellow Perch,Lake Erie ,1247.4,41.568348,-82.967196,160,9.1,1411
+Massachusetts,Yellow Perch,South Watuppa Pond,1247.4,41.665248,-71.129832,20,0.2,739
+Connecticut,Yellow Perch,Black Pond ,1275.7,41.969403,-72.069037,240,6.2,1496
+North Dakota,Yellow Perch,Devils lake ,1332.4,48.030841,-98.961317,440,13.5,2314
+Alberta,Yellow Perch,Moose Lake,1347.2,58.231146,-114.372869,280,14.3,2479
+Minnesota,Yellow Perch,Lake Plantaganette ,1474.2,47.407267,-94.961454,420,6.6,1173
+Wisconsin,Yellow Perch,Lake Winnebago ,1474.2,44.028509,-88.421471,200,10.9,1833
+New York,Yellow Perch,Lake Erie ,1587.6,42.704349,-79.025584,160,7.2,1414
+Michigan,Yellow Perch,Independence Lake ,1701,46.807042,-87.697814,180,6.4,1194
